@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 
@@ -9,7 +10,13 @@ export const metadata: Metadata = {
   },
   description:
     "Check Roblox username availability and generate Roblox username ideas by style.",
-  metadataBase: new URL("https://example.com")
+  metadataBase: new URL("https://www.bentools.site"),
+  openGraph: {
+    title: "BenTools - Roblox Tools Hub",
+    description:
+      "Free Roblox username, bio, avatar, and game picker tools.",
+    images: ["/bentools-logo.png"]
+  }
 };
 
 export default function RootLayout({
@@ -22,8 +29,16 @@ export default function RootLayout({
       <body className="min-h-screen antialiased">
         <header className="border-b border-slate-200 bg-white">
           <nav className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
-            <Link className="text-lg font-bold text-slate-950" href="/">
-              Roblox Username Tools
+            <Link className="inline-flex w-fit items-center" href="/">
+              <Image
+                alt="BenTools Roblox Tools Hub"
+                className="h-14 w-auto"
+                height={120}
+                priority
+                src="/bentools-logo.png"
+                width={168}
+              />
+              <span className="sr-only">BenTools Roblox Tools Hub</span>
             </Link>
             <div className="flex flex-wrap gap-2 text-sm font-medium text-slate-700">
               <Link
