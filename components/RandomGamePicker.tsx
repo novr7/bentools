@@ -4,75 +4,78 @@ import { useMemo, useState } from "react";
 
 type GameCategory = "Obby" | "Horror" | "Anime" | "RP";
 type CategoryFilter = "All" | GameCategory;
+type MoodFilter = "Any" | "Chill" | "Scary" | "Competitive" | "Social";
 
 type RobloxGame = {
   name: string;
   category: GameCategory;
+  mood: Exclude<MoodFilter, "Any">;
 };
 
 const categories: CategoryFilter[] = ["All", "Obby", "Horror", "Anime", "RP"];
+const moods: MoodFilter[] = ["Any", "Chill", "Scary", "Competitive", "Social"];
 
 const games: RobloxGame[] = [
-  { name: "Tower of Hell", category: "Obby" },
-  { name: "Mega Easy Obby", category: "Obby" },
-  { name: "Cotton Obby", category: "Obby" },
-  { name: "Escape Running Head", category: "Obby" },
-  { name: "Barry's Prison Run", category: "Obby" },
-  { name: "Speed Run 4", category: "Obby" },
-  { name: "Mega Fun Obby", category: "Obby" },
-  { name: "Escape School Obby", category: "Obby" },
-  { name: "Escape Grandma's House Obby", category: "Obby" },
-  { name: "Escape Papa Pizza's Pizzeria", category: "Obby" },
-  { name: "Impossible Squid Game Obby", category: "Obby" },
-  { name: "Rainbow Friends Obby", category: "Obby" },
-  { name: "Parkour", category: "Obby" },
-  { name: "Flood Escape 2", category: "Obby" },
-  { name: "Obby Creator", category: "Obby" },
-  { name: "DOORS", category: "Horror" },
-  { name: "Rainbow Friends", category: "Horror" },
-  { name: "The Mimic", category: "Horror" },
-  { name: "Piggy", category: "Horror" },
-  { name: "Apeirophobia", category: "Horror" },
-  { name: "Pressure", category: "Horror" },
-  { name: "Break In 2", category: "Horror" },
-  { name: "3008", category: "Horror" },
-  { name: "The Intruder", category: "Horror" },
-  { name: "Geisha", category: "Horror" },
-  { name: "Evade", category: "Horror" },
-  { name: "Spider", category: "Horror" },
-  { name: "Bear", category: "Horror" },
-  { name: "Elmira", category: "Horror" },
-  { name: "Forgotten Memories", category: "Horror" },
-  { name: "Blox Fruits", category: "Anime" },
-  { name: "Anime Fighters Simulator", category: "Anime" },
-  { name: "Anime Champions Simulator", category: "Anime" },
-  { name: "Anime Defenders", category: "Anime" },
-  { name: "Anime Last Stand", category: "Anime" },
-  { name: "Anime Vanguards", category: "Anime" },
-  { name: "All Star Tower Defense", category: "Anime" },
-  { name: "Shindo Life", category: "Anime" },
-  { name: "Project Slayers", category: "Anime" },
-  { name: "King Legacy", category: "Anime" },
-  { name: "Grand Piece Online", category: "Anime" },
-  { name: "Anime Dimensions Simulator", category: "Anime" },
-  { name: "Demonfall", category: "Anime" },
-  { name: "Heroes Battlegrounds", category: "Anime" },
-  { name: "A One Piece Game", category: "Anime" },
-  { name: "Brookhaven RP", category: "RP" },
-  { name: "Adopt Me!", category: "RP" },
-  { name: "Berry Avenue", category: "RP" },
-  { name: "Livetopia", category: "RP" },
-  { name: "MeepCity", category: "RP" },
-  { name: "Royale High", category: "RP" },
-  { name: "Welcome to Bloxburg", category: "RP" },
-  { name: "Twilight Daycare", category: "RP" },
-  { name: "Maple Hospital", category: "RP" },
-  { name: "Emergency Hamburg", category: "RP" },
-  { name: "Greenville", category: "RP" },
-  { name: "ER:LC", category: "RP" },
-  { name: "Cabin Crew Simulator", category: "RP" },
-  { name: "Restaurant Tycoon 2", category: "RP" },
-  { name: "Club Roblox", category: "RP" }
+  { name: "Tower of Hell", category: "Obby", mood: "Competitive" },
+  { name: "Mega Easy Obby", category: "Obby", mood: "Chill" },
+  { name: "Cotton Obby", category: "Obby", mood: "Chill" },
+  { name: "Escape Running Head", category: "Obby", mood: "Competitive" },
+  { name: "Barry's Prison Run", category: "Obby", mood: "Competitive" },
+  { name: "Speed Run 4", category: "Obby", mood: "Competitive" },
+  { name: "Mega Fun Obby", category: "Obby", mood: "Chill" },
+  { name: "Escape School Obby", category: "Obby", mood: "Chill" },
+  { name: "Escape Grandma's House Obby", category: "Obby", mood: "Chill" },
+  { name: "Escape Papa Pizza's Pizzeria", category: "Obby", mood: "Chill" },
+  { name: "Impossible Squid Game Obby", category: "Obby", mood: "Competitive" },
+  { name: "Rainbow Friends Obby", category: "Obby", mood: "Scary" },
+  { name: "Parkour", category: "Obby", mood: "Competitive" },
+  { name: "Flood Escape 2", category: "Obby", mood: "Competitive" },
+  { name: "Obby Creator", category: "Obby", mood: "Social" },
+  { name: "DOORS", category: "Horror", mood: "Scary" },
+  { name: "Rainbow Friends", category: "Horror", mood: "Scary" },
+  { name: "The Mimic", category: "Horror", mood: "Scary" },
+  { name: "Piggy", category: "Horror", mood: "Scary" },
+  { name: "Apeirophobia", category: "Horror", mood: "Scary" },
+  { name: "Pressure", category: "Horror", mood: "Scary" },
+  { name: "Break In 2", category: "Horror", mood: "Social" },
+  { name: "3008", category: "Horror", mood: "Scary" },
+  { name: "The Intruder", category: "Horror", mood: "Scary" },
+  { name: "Geisha", category: "Horror", mood: "Scary" },
+  { name: "Evade", category: "Horror", mood: "Competitive" },
+  { name: "Spider", category: "Horror", mood: "Scary" },
+  { name: "Bear", category: "Horror", mood: "Scary" },
+  { name: "Elmira", category: "Horror", mood: "Scary" },
+  { name: "Forgotten Memories", category: "Horror", mood: "Scary" },
+  { name: "Blox Fruits", category: "Anime", mood: "Competitive" },
+  { name: "Anime Fighters Simulator", category: "Anime", mood: "Chill" },
+  { name: "Anime Champions Simulator", category: "Anime", mood: "Competitive" },
+  { name: "Anime Defenders", category: "Anime", mood: "Competitive" },
+  { name: "Anime Last Stand", category: "Anime", mood: "Competitive" },
+  { name: "Anime Vanguards", category: "Anime", mood: "Competitive" },
+  { name: "All Star Tower Defense", category: "Anime", mood: "Competitive" },
+  { name: "Shindo Life", category: "Anime", mood: "Social" },
+  { name: "Project Slayers", category: "Anime", mood: "Competitive" },
+  { name: "King Legacy", category: "Anime", mood: "Competitive" },
+  { name: "Grand Piece Online", category: "Anime", mood: "Competitive" },
+  { name: "Anime Dimensions Simulator", category: "Anime", mood: "Chill" },
+  { name: "Demonfall", category: "Anime", mood: "Competitive" },
+  { name: "Heroes Battlegrounds", category: "Anime", mood: "Competitive" },
+  { name: "A One Piece Game", category: "Anime", mood: "Social" },
+  { name: "Brookhaven RP", category: "RP", mood: "Social" },
+  { name: "Adopt Me!", category: "RP", mood: "Social" },
+  { name: "Berry Avenue", category: "RP", mood: "Social" },
+  { name: "Livetopia", category: "RP", mood: "Social" },
+  { name: "MeepCity", category: "RP", mood: "Social" },
+  { name: "Royale High", category: "RP", mood: "Social" },
+  { name: "Welcome to Bloxburg", category: "RP", mood: "Chill" },
+  { name: "Twilight Daycare", category: "RP", mood: "Social" },
+  { name: "Maple Hospital", category: "RP", mood: "Social" },
+  { name: "Emergency Hamburg", category: "RP", mood: "Social" },
+  { name: "Greenville", category: "RP", mood: "Chill" },
+  { name: "ER:LC", category: "RP", mood: "Social" },
+  { name: "Cabin Crew Simulator", category: "RP", mood: "Chill" },
+  { name: "Restaurant Tycoon 2", category: "RP", mood: "Chill" },
+  { name: "Club Roblox", category: "RP", mood: "Social" }
 ];
 
 function pickRandomGame(list: RobloxGame[]): RobloxGame {
@@ -81,27 +84,30 @@ function pickRandomGame(list: RobloxGame[]): RobloxGame {
 
 export function RandomGamePicker() {
   const [category, setCategory] = useState<CategoryFilter>("All");
+  const [mood, setMood] = useState<MoodFilter>("Any");
   const filteredGames = useMemo(
     () =>
-      category === "All"
-        ? games
-        : games.filter((game) => game.category === category),
-    [category]
+      games.filter(
+        (game) =>
+          (category === "All" || game.category === category) &&
+          (mood === "Any" || game.mood === mood)
+      ),
+    [category, mood]
   );
   const [pickedGame, setPickedGame] = useState<RobloxGame>(() =>
     pickRandomGame(games)
   );
 
   function handlePick() {
-    setPickedGame(pickRandomGame(filteredGames));
+    setPickedGame(pickRandomGame(filteredGames.length ? filteredGames : games));
   }
 
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-soft sm:p-6">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div className="grid gap-4 sm:grid-cols-3 sm:items-end">
         <div className="w-full sm:max-w-xs">
           <label className="block text-sm font-bold text-slate-800" htmlFor="game-category">
-            Category
+            Genre
           </label>
           <select
             className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-4 text-base font-semibold text-slate-950 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
@@ -112,6 +118,23 @@ export function RandomGamePicker() {
             value={category}
           >
             {categories.map((item) => (
+              <option key={item} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="w-full sm:max-w-xs">
+          <label className="block text-sm font-bold text-slate-800" htmlFor="game-mood">
+            Mood
+          </label>
+          <select
+            className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-4 text-base font-semibold text-slate-950 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
+            id="game-mood"
+            onChange={(event) => setMood(event.target.value as MoodFilter)}
+            value={mood}
+          >
+            {moods.map((item) => (
               <option key={item} value={item}>
                 {item}
               </option>
@@ -135,7 +158,7 @@ export function RandomGamePicker() {
           {pickedGame.name}
         </h2>
         <p className="mt-3 inline-flex rounded-md bg-white px-3 py-2 text-sm font-bold text-slate-700">
-          Category: {pickedGame.category}
+          Genre: {pickedGame.category} | Mood: {pickedGame.mood}
         </p>
       </div>
     </div>

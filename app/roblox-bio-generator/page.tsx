@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { AdPlaceholder } from "@/components/AdPlaceholder";
 import { BioGenerator } from "@/components/BioGenerator";
 import { FAQ } from "@/components/FAQ";
-import { RelatedTools } from "@/components/RelatedTools";
+import { ContentSection, InternalToolLinks } from "@/components/SeoContent";
 
 export const metadata: Metadata = {
   title: "Roblox Bio Generator - Aesthetic, Cute & Stylish Bios",
@@ -34,6 +33,24 @@ const faqs = [
   }
 ];
 
+const internalLinks = [
+  {
+    href: "/roblox-username-checker",
+    title: "Roblox Username Checker",
+    description: "Check if a username is valid or available."
+  },
+  {
+    href: "/roblox-username-generator",
+    title: "Roblox Username Generator",
+    description: "Generate Roblox username ideas by style."
+  },
+  {
+    href: "/roblox-avatar-idea-generator",
+    title: "Roblox Avatar Idea Generator",
+    description: "Find outfit inspiration for your Roblox avatar."
+  }
+];
+
 export default function RobloxBioGeneratorPage() {
   return (
     <main>
@@ -47,19 +64,6 @@ export default function RobloxBioGeneratorPage() {
             <h1 className="mt-3 text-4xl font-bold tracking-normal text-slate-950">
               Roblox Bio Generator
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              A Roblox bio is the short profile text players use to show their
-              personality, mood, favorite style, or gaming energy before anyone
-              joins them in a world. Aesthetic bios are popular because they
-              make a profile feel more intentional with soft wording, symbols,
-              emojis, and a clear vibe in just one or two lines. Instead of
-              writing a long paragraph, many players choose a cute, anime,
-              dark, soft, or gamer-style bio that is easy to read and quick to
-              copy. This generator creates safe, teen-friendly Roblox bio ideas
-              with no personal data, political content, or offensive wording.
-              Pick a style, generate 10 bios, then copy the one that best
-              matches your profile.
-            </p>
           </div>
           <div className="mt-8">
             <BioGenerator />
@@ -68,34 +72,40 @@ export default function RobloxBioGeneratorPage() {
       </section>
       <section className="mx-auto max-w-5xl px-4 py-8">
         <AdPlaceholder label="Mid content ad placeholder" />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          <Link
-            className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-soft"
-            href="/roblox-username-checker"
-          >
-            <h2 className="text-xl font-bold text-slate-950">
-              Roblox Username Checker
-            </h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Check if your Roblox username idea follows the format rules and
-              may be available.
-            </p>
-          </Link>
-          <Link
-            className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-soft"
-            href="/roblox-username-generator"
-          >
-            <h2 className="text-xl font-bold text-slate-950">
-              Roblox Username Generator
-            </h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Generate cute, cool, anime, dark, aesthetic, and gamer username
-              ideas.
-            </p>
-          </Link>
-        </div>
+        <ContentSection title="Aesthetic Roblox bios for your profile">
+          <p>
+            A Roblox bio is a short description on your profile that shows your
+            personality, mood, favorite games, or overall style. With our Roblox
+            Bio Generator, you can create aesthetic, cute, dark, anime, soft, or
+            gamer bios instantly without writing from scratch. A short profile
+            line can make your account feel more expressive and help visitors
+            understand your vibe before they add you or join you in a game.
+          </p>
+          <p>
+            This Roblox bio generator aesthetic tool is designed for quick,
+            copy-ready text. The bios use emojis, symbols, and safe wording so
+            they feel stylish while staying friendly for teen players. Use it
+            when you want a cozy profile, a darker mood, an anime-inspired line,
+            or a gamer phrase that feels simple and memorable.
+          </p>
+        </ContentSection>
+        <ContentSection title="How to use the Roblox Bio Generator">
+          <ol className="list-decimal space-y-2 pl-5">
+            <li>Select the bio style you want.</li>
+            <li>Click &quot;Generate 10 bios&quot; to create copy-ready options.</li>
+            <li>Copy the bio you like and paste it into your Roblox profile.</li>
+          </ol>
+        </ContentSection>
+        <ContentSection title="Bio writing tips">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Keep your bio short so it is easy to read.</li>
+            <li>Choose emojis that match your profile style.</li>
+            <li>Avoid personal information such as age, location, or contacts.</li>
+            <li>Preview your bio after pasting because symbols can vary by device.</li>
+          </ul>
+        </ContentSection>
         <FAQ items={faqs} />
-        <RelatedTools />
+        <InternalToolLinks links={internalLinks} />
         <div className="mt-8">
           <AdPlaceholder label="Bottom ad placeholder" />
         </div>

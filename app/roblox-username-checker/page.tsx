@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Suspense } from "react";
 import { AdPlaceholder } from "@/components/AdPlaceholder";
 import { FAQ } from "@/components/FAQ";
-import { RelatedTools } from "@/components/RelatedTools";
+import { ContentSection, InternalToolLinks } from "@/components/SeoContent";
 import { UsernameChecker } from "@/components/UsernameChecker";
 
 export const metadata: Metadata = {
@@ -35,6 +34,24 @@ const faqs = [
   }
 ];
 
+const internalLinks = [
+  {
+    href: "/roblox-username-generator",
+    title: "Roblox Username Generator",
+    description: "Generate creative username options by style."
+  },
+  {
+    href: "/roblox-username-ideas",
+    title: "Roblox Username Ideas",
+    description: "Browse cute, cool, dark, and anime username ideas."
+  },
+  {
+    href: "/roblox-bio-generator",
+    title: "Roblox Bio Generator",
+    description: "Create copy-ready Roblox profile bios."
+  }
+];
+
 export default function RobloxUsernameCheckerPage() {
   return (
     <main>
@@ -48,13 +65,15 @@ export default function RobloxUsernameCheckerPage() {
             <h1 className="mt-3 text-4xl font-bold tracking-normal text-slate-950">
               Roblox Username Checker
             </h1>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              Enter a Roblox username to check local formatting rules first,
-              then run a server-side availability check.
-            </p>
           </div>
           <div className="mt-8">
-            <Suspense fallback={<div className="rounded-lg border border-slate-200 bg-white p-6 shadow-soft">Loading checker...</div>}>
+            <Suspense
+              fallback={
+                <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+                  Loading checker...
+                </div>
+              }
+            >
               <UsernameChecker />
             </Suspense>
           </div>
@@ -65,23 +84,50 @@ export default function RobloxUsernameCheckerPage() {
       </section>
       <section className="mx-auto max-w-4xl px-4 py-8">
         <AdPlaceholder label="Middle content ad placeholder" />
-        <div className="mt-8 rounded-lg border border-slate-200 bg-white p-5">
-          <h2 className="text-2xl font-bold text-slate-950">
-            Need name ideas first?
-          </h2>
-          <p className="mt-2 text-slate-600">
-            Generate style-based Roblox username ideas, copy the best ones, and
-            come back here to check availability.
+        <ContentSection title="Roblox username availability made simple">
+          <p>
+            Roblox Username Checker is a free tool that helps you check if a
+            Roblox username is available or already taken. Choosing the right
+            username matters because it represents your identity in Roblox
+            games, social interactions, groups, and your public profile. A clear
+            name is easier for friends to remember and can make your account
+            feel more polished from the start.
           </p>
-          <Link
-            className="mt-4 inline-flex rounded-md bg-slate-950 px-4 py-3 text-sm font-bold text-white hover:bg-slate-800"
-            href="/roblox-username-generator"
-          >
-            Open username generator
-          </Link>
-        </div>
+          <p>
+            With this Roblox username availability tool, you can instantly
+            verify whether a name follows basic Roblox format rules before
+            trying it on Roblox. The checker validates length, allowed
+            characters, and underscore placement first, then runs a server-side
+            availability request when possible. That saves time, reduces trial
+            and error, and helps you move faster from rough ideas to a username
+            you actually want to use.
+          </p>
+        </ContentSection>
+        <ContentSection title="How to use the Roblox Username Checker">
+          <ol className="list-decimal space-y-2 pl-5">
+            <li>Enter your desired username in the input box.</li>
+            <li>Click the &quot;Check Username&quot; button.</li>
+            <li>
+              Read the result: Available means the username may be usable, Taken
+              means it is already in use, and Invalid means it does not follow
+              Roblox username rules.
+            </li>
+          </ol>
+          <p>
+            Make sure your username follows Roblox guidelines, including length,
+            allowed characters, and underscore rules.
+          </p>
+        </ContentSection>
+        <ContentSection title="Tips for choosing a good Roblox username">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Keep it short and memorable.</li>
+            <li>Avoid random numbers unless they make the name better.</li>
+            <li>Use unique words or combinations that match your style.</li>
+            <li>Try a theme like cute, cool, anime, dark, or aesthetic.</li>
+          </ul>
+        </ContentSection>
         <FAQ items={faqs} />
-        <RelatedTools />
+        <InternalToolLinks links={internalLinks} />
         <div className="mt-8">
           <AdPlaceholder label="Bottom ad placeholder" />
         </div>

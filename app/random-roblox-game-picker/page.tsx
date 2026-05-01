@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { AdPlaceholder } from "@/components/AdPlaceholder";
 import { FAQ } from "@/components/FAQ";
 import { RandomGamePicker } from "@/components/RandomGamePicker";
-import { RelatedTools } from "@/components/RelatedTools";
+import { ContentSection, InternalToolLinks } from "@/components/SeoContent";
 
 export const metadata: Metadata = {
-  title: "Random Roblox Game Picker - Find What to Play",
+  title: "What to Play Roblox - Random Roblox Game Picker",
   description:
-    "Pick a random Roblox game to play from popular Obby, Horror, Anime, and RP categories."
+    "Not sure what to play on Roblox? Find games by genre and mood with this Roblox game finder."
 };
 
 const faqs = [
@@ -63,17 +62,8 @@ export default function RandomRobloxGamePickerPage() {
               Find something to play
             </p>
             <h1 className="mt-3 text-4xl font-bold tracking-normal text-slate-950">
-              Random Roblox Game Picker
+              What to Play Roblox Game Finder
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              Roblox has thousands of experiences, so choosing what to play can
-              take longer than starting the game. This random Roblox game picker
-              helps you quickly discover an idea from popular categories like
-              Obby, Horror, Anime, and RP. Use it when your group cannot decide,
-              when you want a fresh game night pick, or when you simply want to
-              try something outside your usual favorites. The list is static for
-              speed and does not require any external API calls.
-            </p>
           </div>
           <div className="mt-8">
             <RandomGamePicker />
@@ -82,29 +72,41 @@ export default function RandomRobloxGamePickerPage() {
       </section>
       <section className="mx-auto max-w-5xl px-4 py-8">
         <AdPlaceholder label="Mid content ad placeholder" />
-        <section className="mt-8">
-          <h2 className="text-2xl font-bold text-slate-950">
-            More Roblox tools
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-3">
-            {toolLinks.map((tool) => (
-              <Link
-                className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-soft"
-                href={tool.href}
-                key={tool.href}
-              >
-                <h3 className="text-lg font-bold text-slate-950">
-                  {tool.title}
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  {tool.description}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </section>
+        <ContentSection title="Find a Roblox game to play next">
+          <p>
+            Not sure what to play on Roblox? Use the Roblox Game Finder to
+            discover new games instantly. With thousands of games available,
+            choosing one can be difficult, especially when you are deciding with
+            friends or want something different from your usual favorites. This
+            tool gives you a quick suggestion so you can spend less time
+            searching and more time playing.
+          </p>
+          <p>
+            The picker uses a static list of popular Roblox games across Obby,
+            Horror, Anime, and RP categories. You can filter by genre and mood,
+            then let the tool choose a game that fits what you want to play.
+            Because it does not call an external API, it loads quickly and works
+            as a simple random decision helper whenever you need a fresh Roblox
+            experience.
+          </p>
+        </ContentSection>
+        <ContentSection title="How to use the Random Roblox Game Picker">
+          <ol className="list-decimal space-y-2 pl-5">
+            <li>Choose a genre or leave the filter set to All.</li>
+            <li>Choose a mood such as Chill, Scary, Competitive, or Social.</li>
+            <li>Click &quot;Pick Random Game&quot;.</li>
+            <li>Use the suggested game name as your next Roblox play idea.</li>
+          </ol>
+        </ContentSection>
+        <ContentSection title="When to use this picker">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Use it when your group cannot decide what to play.</li>
+            <li>Try a new category when your usual games feel stale.</li>
+            <li>Refresh the pick until you find a game that sounds fun.</li>
+          </ul>
+        </ContentSection>
         <FAQ items={faqs} />
-        <RelatedTools />
+        <InternalToolLinks links={toolLinks} />
         <div className="mt-8">
           <AdPlaceholder label="Bottom ad placeholder" />
         </div>

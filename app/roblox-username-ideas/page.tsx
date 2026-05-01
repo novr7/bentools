@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { AdPlaceholder } from "@/components/AdPlaceholder";
 import { FAQ } from "@/components/FAQ";
+import { ContentSection, InternalToolLinks } from "@/components/SeoContent";
 import { UsernameIdeasBrowser } from "@/components/UsernameIdeasBrowser";
 
 export const metadata: Metadata = {
@@ -28,6 +28,24 @@ const faqs = [
   }
 ];
 
+const internalLinks = [
+  {
+    href: "/roblox-username-checker",
+    title: "Roblox Username Checker",
+    description: "Validate username format and check availability."
+  },
+  {
+    href: "/roblox-username-generator",
+    title: "Roblox Username Generator",
+    description: "Generate username ideas with more style options."
+  },
+  {
+    href: "/roblox-bio-generator",
+    title: "Roblox Bio Generator",
+    description: "Create a profile bio to match your username."
+  }
+];
+
 export default function RobloxUsernameIdeasPage() {
   return (
     <main>
@@ -41,13 +59,6 @@ export default function RobloxUsernameIdeasPage() {
             <h1 className="mt-3 text-4xl font-bold tracking-normal text-slate-950">
               Roblox Username Ideas
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              Browse categorized Roblox username ideas without running a live
-              availability check. Pick a style, generate a fresh set of names,
-              and copy anything that fits your profile vibe. When you have a
-              favorite, use the checker tool to validate the format and see if
-              it may be available.
-            </p>
           </div>
           <div className="mt-8">
             <UsernameIdeasBrowser />
@@ -56,22 +67,37 @@ export default function RobloxUsernameIdeasPage() {
       </section>
       <section className="mx-auto max-w-5xl px-4 py-8">
         <AdPlaceholder label="Mid content ad placeholder" />
-        <div className="mt-8 rounded-lg border border-slate-200 bg-white p-5">
-          <h2 className="text-2xl font-bold text-slate-950">
-            Ready to test a name?
-          </h2>
-          <p className="mt-2 text-slate-600">
-            This page is for browsing ideas. Use the checker when you want to
-            validate a username and run an availability check.
+        <ContentSection title="Browse Roblox username ideas by style">
+          <p>
+            Roblox Username Ideas is built for browsing name inspiration by
+            category. Unlike the main generator, this page does not focus on
+            live availability checks. It gives you quick lists of cute, cool,
+            dark, and anime-style username ideas so you can compare different
+            vibes and copy names that match your profile.
           </p>
-          <Link
-            className="mt-4 inline-flex rounded-md bg-slate-950 px-4 py-3 text-sm font-bold text-white hover:bg-slate-800"
-            href="/roblox-username-checker"
-          >
-            Open username checker
-          </Link>
-        </div>
+          <p>
+            Use this page when you are still exploring and want a wider view of
+            possible names before making a final choice. Once you find a name
+            that feels right, open the Roblox Username Checker to validate the
+            format and see whether it may be available.
+          </p>
+        </ContentSection>
+        <ContentSection title="How to use Roblox Username Ideas">
+          <ol className="list-decimal space-y-2 pl-5">
+            <li>Select a style such as Cute, Cool, Dark, or Anime.</li>
+            <li>Click &quot;Generate 20 usernames&quot; to refresh the list.</li>
+            <li>Copy your favorite idea and check it before using it.</li>
+          </ol>
+        </ContentSection>
+        <ContentSection title="Idea browsing tips">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Compare several styles before picking a final direction.</li>
+            <li>Use the copy button to save names you want to test later.</li>
+            <li>Keep your final username readable and easy to remember.</li>
+          </ul>
+        </ContentSection>
         <FAQ items={faqs} />
+        <InternalToolLinks links={internalLinks} />
         <div className="mt-8">
           <AdPlaceholder label="Bottom ad placeholder" />
         </div>

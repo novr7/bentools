@@ -77,6 +77,18 @@ export default function RootLayout({
               >
                 Avatar Ideas
               </Link>
+              <Link
+                className="rounded-md px-3 py-2 hover:bg-slate-100"
+                href="/roblox-font-generator"
+              >
+                Fonts
+              </Link>
+              <Link
+                className="rounded-md px-3 py-2 hover:bg-slate-100"
+                href="/roblox-symbols-copy-and-paste"
+              >
+                Symbols
+              </Link>
             </div>
           </nav>
         </header>

@@ -38,6 +38,60 @@ const tools = [
     title: "Roblox Avatar Idea Generator",
     description:
       "Generate cute, dark, anime, rich, and casual Roblox avatar outfit ideas."
+  },
+  {
+    href: "/roblox-font-generator",
+    title: "Roblox Font Generator",
+    description:
+      "Convert normal text into fancy Roblox font styles for bios and profiles."
+  },
+  {
+    href: "/roblox-symbols-copy-and-paste",
+    title: "Roblox Symbols Copy and Paste",
+    description:
+      "Copy hearts, stars, arrows, aesthetic symbols, and gaming icons."
+  },
+  {
+    href: "/roblox-display-name-generator",
+    title: "Roblox Display Name Ideas",
+    description:
+      "Generate cute, aesthetic, cool, and anime display name ideas."
+  },
+  {
+    href: "/roblox-usernames-for-girls",
+    title: "Roblox Usernames for Girls",
+    description:
+      "Browse cute and aesthetic Roblox username ideas with copy buttons."
+  },
+  {
+    href: "/roblox-usernames-for-boys",
+    title: "Roblox Usernames for Boys",
+    description:
+      "Find cool and powerful Roblox username ideas for boys."
+  },
+  {
+    href: "/roblox-bio-ideas",
+    title: "Roblox Bio Ideas",
+    description:
+      "Copy aesthetic, cute, and creative Roblox bio ideas instantly."
+  },
+  {
+    href: "/roblox-username-combiner",
+    title: "Username Generator Combo",
+    description:
+      "Combine two words into unique Roblox username ideas."
+  },
+  {
+    href: "/roblox-group-name-generator",
+    title: "Roblox Group Name Ideas",
+    description:
+      "Generate creative Roblox group names for clubs, crews, and squads."
+  },
+  {
+    href: "/roblox-outfit-ideas",
+    title: "Roblox Outfit Ideas",
+    description:
+      "Generate outfit inspiration for cute, anime, dark, and gamer avatars."
   }
 ];
 

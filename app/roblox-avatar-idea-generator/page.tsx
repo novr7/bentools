@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { AdPlaceholder } from "@/components/AdPlaceholder";
 import { AvatarIdeaGenerator } from "@/components/AvatarIdeaGenerator";
 import { FAQ } from "@/components/FAQ";
+import { ContentSection, InternalToolLinks } from "@/components/SeoContent";
 
 export const metadata: Metadata = {
   title: "Roblox Avatar Idea Generator",
@@ -48,11 +48,6 @@ export default function RobloxAvatarIdeaGeneratorPage() {
             <h1 className="mt-3 text-4xl font-bold tracking-normal text-slate-950">
               Roblox Avatar Ideas
             </h1>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-              Generate quick Roblox avatar outfit ideas by style. Pick cute,
-              dark, anime, rich, or casual, then use the result as inspiration
-              for clothing, accessories, colors, and shoes in the Roblox catalog.
-            </p>
           </div>
           <div className="mt-8">
             <AvatarIdeaGenerator />
@@ -61,23 +56,45 @@ export default function RobloxAvatarIdeaGeneratorPage() {
       </section>
       <section className="mx-auto max-w-5xl px-4 py-8">
         <AdPlaceholder label="Mid content ad placeholder" />
-        <section className="mt-8">
-          <h2 className="text-2xl font-bold text-slate-950">
-            More Roblox tools
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {toolLinks.map((tool) => (
-              <Link
-                className="rounded-lg border border-slate-200 bg-white p-4 text-sm font-bold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-soft"
-                href={tool.href}
-                key={tool.href}
-              >
-                {tool.title}
-              </Link>
-            ))}
-          </div>
-        </section>
+        <ContentSection title="Roblox avatar ideas for better outfits">
+          <p>
+            Looking for new Roblox avatar ideas? This tool generates outfit and
+            style ideas to help you customize your character without starting
+            from a blank look. A strong avatar can make your profile more
+            recognizable, match your username or bio, and help you express the
+            style you want in roleplay, hangout, simulator, or adventure games.
+          </p>
+          <p>
+            From cute and aesthetic looks to dark, anime, rich, and casual
+            styles, you can quickly find inspiration for clothing, accessories,
+            colors, and shoes. The ideas are template-based, so they are not
+            tied to a specific catalog item. Use them as a direction, then
+            search Roblox for similar pieces or remix the suggestion with items
+            you already own.
+          </p>
+        </ContentSection>
+        <ContentSection title="How to use the Roblox Avatar Idea Generator">
+          <ol className="list-decimal space-y-2 pl-5">
+            <li>Select an avatar style such as Cute, Dark, Anime, Rich, or Casual.</li>
+            <li>Click &quot;Generate 10 ideas&quot; to create outfit concepts.</li>
+            <li>Use your favorite idea as inspiration in the Roblox catalog.</li>
+          </ol>
+        </ContentSection>
+        <ContentSection title="Avatar styling tips">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Match your avatar style with your username and bio.</li>
+            <li>Choose one main color palette before adding accessories.</li>
+            <li>Use accessories sparingly so the outfit stays clean.</li>
+            <li>Save several ideas before buying catalog items.</li>
+          </ul>
+        </ContentSection>
         <FAQ items={faqs} />
+        <InternalToolLinks
+          links={toolLinks.map((tool) => ({
+            ...tool,
+            description: "Open another BenTools Roblox utility."
+          }))}
+        />
         <div className="mt-8">
           <AdPlaceholder label="Bottom ad placeholder" />
         </div>
