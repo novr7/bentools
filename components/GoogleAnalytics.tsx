@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-TZRMN17KVF";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-KQV6E71YB7";
 
 export function GoogleAnalytics() {
   if (!GA_ID) {
