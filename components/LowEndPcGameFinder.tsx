@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import {
   genreOptions,
+  getGameCoverUrl,
   gpuOptions,
   gpuScore,
   lowEndPcGames,
@@ -65,7 +67,7 @@ export function LowEndPcGameFinder() {
           </div>
           <p className="max-w-sm text-sm leading-6 text-slate-300">
             Filter a static list of {lowEndPcGames.length} lightweight PC games
-            for old laptops, weak GPUs, and low RAM setups.
+            with cover images for old laptops, weak GPUs, and low RAM setups.
           </p>
         </div>
 
@@ -164,35 +166,38 @@ export function LowEndPcGameFinder() {
         <div className="mt-5 grid gap-4 md:grid-cols-2">
           {matchingGames.map((game) => (
             <article
-              className="rounded-lg border border-slate-200 bg-slate-50 p-4"
+              className="overflow-hidden rounded-lg border border-slate-200 bg-slate-50"
               key={`${game.title}-${game.genre}`}
             >
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-                    {game.genre}
-                  </p>
-                  <h3 className="mt-1 text-lg font-bold text-slate-950">
-                    {game.title}
-                  </h3>
+              <GameCover game={game} />
+              <div className="p-4">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                      {game.genre}
+                    </p>
+                    <h3 className="mt-1 text-lg font-bold text-slate-950">
+                      {game.title}
+                    </h3>
+                  </div>
+                  <button
+                    className="shrink-0 rounded-md border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-700 transition hover:border-emerald-400 hover:text-emerald-700"
+                    onClick={() => copyTitle(game.title)}
+                    type="button"
+                  >
+                    {copiedTitle === game.title ? "Copied" : "Copy"}
+                  </button>
                 </div>
-                <button
-                  className="shrink-0 rounded-md border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-700 transition hover:border-emerald-400 hover:text-emerald-700"
-                  onClick={() => copyTitle(game.title)}
-                  type="button"
-                >
-                  {copiedTitle === game.title ? "Copied" : "Copy"}
-                </button>
+                <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
+                  <GameSpec label="Minimum RAM" value={game.minRam} />
+                  <GameSpec label="GPU" value={game.gpu} />
+                  <GameSpec label="Price" value={game.price} />
+                  <GameSpec label="Mode" value={game.mode} />
+                </dl>
+                <p className="mt-4 text-sm leading-6 text-slate-600">
+                  {game.note}
+                </p>
               </div>
-              <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
-                <GameSpec label="Minimum RAM" value={game.minRam} />
-                <GameSpec label="GPU" value={game.gpu} />
-                <GameSpec label="Price" value={game.price} />
-                <GameSpec label="Mode" value={game.mode} />
-              </dl>
-              <p className="mt-4 text-sm leading-6 text-slate-600">
-                {game.note}
-              </p>
             </article>
           ))}
         </div>
@@ -207,6 +212,33 @@ export function LowEndPcGameFinder() {
         </div>
       )}
     </section>
+  );
+}
+
+function GameCover({ game }: { game: LowEndPcGame }) {
+  const coverUrl = getGameCoverUrl(game);
+
+  return (
+    <div className="relative aspect-[16/7] overflow-hidden bg-slate-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950" />
+      <div className="absolute inset-0 flex items-center justify-center px-5 text-center">
+        <span className="text-sm font-bold uppercase tracking-wide text-white/70">
+          {game.title}
+        </span>
+      </div>
+      {coverUrl ? (
+        <Image
+          alt={`${game.title} cover image`}
+          className="object-cover"
+          fill
+          sizes="(min-width: 768px) 50vw, 100vw"
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+          }}
+          src={coverUrl}
+        />
+      ) : null}
+    </div>
   );
 }
 
