@@ -1,6 +1,6 @@
 # Roblox Username Checker, Generator, Bio Generator, Game Picker & Avatar Ideas
 
-SEO-friendly Next.js web app for Roblox username checks, name ideas, bio tools, fancy fonts, symbols, game discovery, avatar ideas, outfit ideas, and group name brainstorming.
+SEO-friendly Next.js web app for Roblox username checks, name ideas, bio tools, fancy fonts, symbols, game discovery, avatar ideas, outfit ideas, group name brainstorming, and the Ben Game Finder low-end PC game tool.
 
 ## Features
 
@@ -13,6 +13,8 @@ SEO-friendly Next.js web app for Roblox username checks, name ideas, bio tools, 
 - Roblox avatar idea generator with Cute, Dark, Anime, Rich, and Casual styles
 - Roblox font generator and symbols copy page
 - Display name, girls username, boys username, bio ideas, username combiner, group name, and outfit idea tools
+- Ben Game Finder low-end PC game finder with static low-spec game recommendations
+- Filters for RAM, GPU, genre, free/paid games, and online/offline mode
 - Copy-to-clipboard feedback
 - SEO metadata and FAQ content on tool pages
 - AdSense-ready placeholder areas
@@ -50,6 +52,7 @@ Open `http://localhost:3000`.
 - `/roblox-bio-generator`
 - `/random-roblox-game-picker`
 - `/roblox-avatar-idea-generator`
+- `/low-end-pc-game-finder`
 - `/roblox-font-generator`
 - `/roblox-symbols-copy-and-paste`
 - `/roblox-display-name-generator`

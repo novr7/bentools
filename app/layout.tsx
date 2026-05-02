@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description:
     "Check Roblox username availability and generate Roblox username ideas by style.",
-  metadataBase: new URL("https://www.bentools.site"),
+  metadataBase: new URL("https://bentools.site"),
   openGraph: {
     title: "BenTools - Roblox Tools Hub",
     description:
@@ -72,6 +72,12 @@ export default function RootLayout({
                 href="/random-roblox-game-picker"
               >
                 Game Picker
+              </Link>
+              <Link
+                className="rounded-md px-3 py-2 hover:bg-slate-100"
+                href="/low-end-pc-game-finder"
+              >
+                Ben Game Finder
               </Link>
               <Link
                 className="rounded-md px-3 py-2 hover:bg-slate-100"

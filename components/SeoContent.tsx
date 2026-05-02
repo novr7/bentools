@@ -14,6 +14,8 @@ type ToolLink = {
 
 type InternalToolLinksProps = {
   links?: ToolLink[];
+  title?: string;
+  includeDefaultLinks?: boolean;
 };
 
 const defaultLinks: ToolLink[] = [
@@ -43,17 +45,23 @@ export function ContentSection({ title, children }: ContentSectionProps) {
   );
 }
 
-export function InternalToolLinks({ links = defaultLinks }: InternalToolLinksProps) {
-  const mergedLinks = [
-    ...links,
-    ...defaultLinks.filter(
-      (defaultLink) => !links.some((link) => link.href === defaultLink.href)
-    )
-  ];
+export function InternalToolLinks({
+  links = defaultLinks,
+  title = "More Roblox tools",
+  includeDefaultLinks = true
+}: InternalToolLinksProps) {
+  const mergedLinks = includeDefaultLinks
+    ? [
+        ...links,
+        ...defaultLinks.filter(
+          (defaultLink) => !links.some((link) => link.href === defaultLink.href)
+        )
+      ]
+    : links;
 
   return (
     <section className="mt-10">
-      <h2 className="text-2xl font-bold text-slate-950">More Roblox tools</h2>
+      <h2 className="text-2xl font-bold text-slate-950">{title}</h2>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {mergedLinks.map((tool) => (
           <Link
