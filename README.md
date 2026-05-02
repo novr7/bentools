@@ -54,6 +54,9 @@ Open `http://localhost:3000`.
 - `/random-roblox-game-picker`
 - `/roblox-avatar-idea-generator`
 - `/low-end-pc-game-finder`
+- `/games-for-2gb-ram`
+- `/games-for-4gb-ram`
+- `/no-gpu-games`
 - `/roblox-font-generator`
 - `/roblox-symbols-copy-and-paste`
 - `/roblox-display-name-generator`

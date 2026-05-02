@@ -62,7 +62,7 @@ export function LowEndPcGameFinder() {
               Ben Game Finder
             </p>
             <h2 className="mt-2 text-2xl font-bold">
-              Find low end PC games by your specs
+              Best Games for Your PC
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-6 text-slate-300">
@@ -152,6 +152,9 @@ export function LowEndPcGameFinder() {
 
       <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <div>
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
+            Top Picks
+          </p>
           <h3 className="text-xl font-bold text-slate-950">
             Matching games
           </h3>
