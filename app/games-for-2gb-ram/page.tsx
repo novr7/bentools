@@ -19,17 +19,17 @@ const games = lowEndPcGames
 const relatedLinks = [
   {
     href: "/low-end-pc-game-finder",
-    title: "Low End PC Game Finder",
+    title: "Explore low end PC games for 2GB RAM",
     description: "Filter low end pc games by RAM, GPU, genre, price, and mode."
   },
   {
     href: "/games-for-4gb-ram",
-    title: "Games for 4GB RAM",
+    title: "Explore more low end PC games for 4GB RAM",
     description: "Browse games for 4gb ram laptops and older PCs."
   },
   {
     href: "/no-gpu-games",
-    title: "No GPU Games",
+    title: "Explore no GPU games for integrated graphics PCs",
     description: "Find games for integrated graphics and PCs without a graphics card."
   }
 ];
@@ -82,7 +82,7 @@ export default function GamesFor2GbRamPage() {
                   {game.title}
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  {game.genre} • {game.gpu} • {game.price} • {game.mode}
+                  {game.genre} - {game.gpu} - {game.price} - {game.mode}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {game.note}
@@ -101,6 +101,16 @@ export default function GamesFor2GbRamPage() {
             apps closed. For more control, use the main Low End PC Game Finder
             and filter by RAM, GPU, genre, price, and mode.
           </p>
+        </ContentSection>
+
+        <ContentSection title="Tips for Playing Games on 2GB RAM">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Close browser tabs and launchers before starting the game.</li>
+            <li>Pick offline 2D games first if your laptop is very old.</li>
+            <li>Use 720p or lower resolution when the game supports it.</li>
+            <li>Avoid heavy mods, texture packs, and background recording tools.</li>
+            <li>Choose Integrated Graphics in the finder if you are unsure about your GPU.</li>
+          </ul>
         </ContentSection>
 
         <InternalToolLinks

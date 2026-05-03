@@ -21,8 +21,8 @@ type InternalToolLinksProps = {
 const defaultLinks: ToolLink[] = [
   {
     href: "/low-end-pc-game-finder",
-    title: "Low End PC Game Finder",
-    description: "Find low end PC games for 2GB RAM, 4GB RAM, and weak PCs."
+    title: "Explore low end PC games for 2GB and 4GB RAM",
+    description: "Find low end PC games for 2GB RAM, 4GB RAM, integrated graphics, and weak PCs."
   },
   {
     href: "/roblox-username-checker",

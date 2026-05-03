@@ -8,7 +8,7 @@ import { lowEndPcGames } from "@/lib/lowEndPcGames";
 
 export const metadata: Metadata = {
   title:
-    "Low End PC Game Finder – Find Games for 2GB, 4GB RAM & Weak PCs",
+    "Low-End PC Game Finder (2026) - 100+ Games That Run Smoothly on 2GB / 4GB RAM",
   description:
     "Find the best low-end PC games for weak computers. Filter by RAM, GPU, and genre to discover games that run smoothly on 2GB or 4GB RAM PCs.",
   alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Low End PC Game Finder – Find Games for 2GB, 4GB RAM & Weak PCs",
+      "Low-End PC Game Finder (2026) - 100+ Games That Run Smoothly on 2GB / 4GB RAM",
     description:
       "Find the best low-end PC games for weak computers. Filter by RAM, GPU, and genre to discover games that run smoothly on 2GB or 4GB RAM PCs.",
     url: "https://bentools.site/low-end-pc-game-finder",
@@ -41,6 +41,16 @@ const faqs = [
       "Games such as Stardew Valley, Terraria, Undertale, FTL, Celeste, OpenTTD, and older classic games are good starting points for 2GB RAM PCs."
   },
   {
+    question: "What games can run on 2GB RAM?",
+    answer:
+      "Many lightweight games like Terraria, Stardew Valley, and Undertale can run smoothly on 2GB RAM PCs when background apps are closed."
+  },
+  {
+    question: "Can I play games without GPU?",
+    answer:
+      "Yes, many indie and older games work without a dedicated GPU, especially 2D games, classic PC games, and games that support integrated graphics."
+  },
+  {
     question: "Are free low-end PC games included?",
     answer:
       "Yes. The dataset includes free low-end PC games such as Brawlhalla, Old School RuneScape, OpenTTD, Battle for Wesnoth, TrackMania Nations Forever, and more."
@@ -60,18 +70,18 @@ const faqs = [
 const internalLinks = [
   {
     href: "/games-for-2gb-ram",
-    title: "Games for 2GB RAM PC",
-    description: "Find lightweight games for very old laptops and PCs."
+    title: "Explore low end PC games for 2GB RAM",
+    description: "Find lightweight low end PC games for very old laptops and PCs."
   },
   {
     href: "/games-for-4gb-ram",
-    title: "Games for 4GB RAM PC",
-    description: "Browse games that fit common low-spec laptop setups."
+    title: "Explore more low end PC games for 4GB RAM",
+    description: "Browse games for 4GB RAM PCs, low spec laptops, and weak computers."
   },
   {
     href: "/no-gpu-games",
-    title: "Games for No Graphics Card",
-    description: "Discover games for integrated graphics and weak GPUs."
+    title: "Explore no GPU games for integrated graphics PCs",
+    description: "Discover low spec PC games for integrated graphics and weak GPUs."
   }
 ];
 
@@ -108,10 +118,25 @@ const bestGames = [
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "WebApplication",
-  name: "Low End PC Game Finder",
-  applicationCategory: "GameApplication",
-  operatingSystem: "Web"
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      name: "Low End PC Game Finder",
+      applicationCategory: "GameApplication",
+      operatingSystem: "Web"
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer
+        }
+      }))
+    }
+  ]
 };
 
 export default function LowEndPcGameFinderPage() {
@@ -170,7 +195,7 @@ export default function LowEndPcGameFinderPage() {
           </p>
         </ContentSection>
 
-        <ContentSection title="Best Games for Low-End PCs">
+        <ContentSection title="Best Low-End PC Games (Top Picks)">
           <p>
             The best games for low-end PCs are usually lightweight, flexible,
             and fun without needing high-end graphics. These top picks include
@@ -185,7 +210,7 @@ export default function LowEndPcGameFinderPage() {
               >
                 <h3 className="font-bold text-slate-950">{game.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  {game.genre} • {game.minRam} RAM • {game.gpu} • {game.note}
+                  {game.genre} - {game.minRam} RAM - {game.gpu} - {game.note}
                 </p>
               </div>
             ))}
@@ -230,13 +255,9 @@ export default function LowEndPcGameFinderPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>Start with 2GB or 4GB RAM if your laptop is old.</li>
-            <li>
-              Choose Integrated Graphics if you do not have a dedicated GPU.
-            </li>
+            <li>Choose Integrated Graphics if you do not have a dedicated GPU.</li>
             <li>Offline indie games usually run better on low-end PCs.</li>
-            <li>
-              Lower resolution and graphics settings can improve FPS.
-            </li>
+            <li>Lower resolution and graphics settings can improve FPS.</li>
           </ul>
         </ContentSection>
 
@@ -264,15 +285,15 @@ export default function LowEndPcGameFinderPage() {
             that affects your PC the most. If memory is your biggest problem,
             start with{" "}
             <Link className="font-semibold text-blue-700" href="/games-for-2gb-ram">
-              games for 2GB RAM
+              explore low end PC games for 2GB RAM
             </Link>{" "}
             or{" "}
             <Link className="font-semibold text-blue-700" href="/games-for-4gb-ram">
-              games for 4GB RAM
+              explore more low end PC games for 4GB RAM
             </Link>
             . If your computer has no dedicated graphics card, start with the{" "}
             <Link className="font-semibold text-blue-700" href="/no-gpu-games">
-              no GPU games
+              best no GPU games for integrated graphics PCs
             </Link>{" "}
             page and then come back to the finder to filter by genre, price,
             and mode. This keeps the search focused instead of making you scan

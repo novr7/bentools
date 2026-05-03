@@ -19,17 +19,17 @@ const games = lowEndPcGames
 const relatedLinks = [
   {
     href: "/low-end-pc-game-finder",
-    title: "Low End PC Game Finder",
-    description: "Use filters to find games for 4gb ram and weak PCs."
+    title: "Explore more low end PC games for 4GB RAM",
+    description: "Use filters to find games for 4gb ram, weak PCs, and low spec laptops."
   },
   {
     href: "/games-for-2gb-ram",
-    title: "Games for 2GB RAM",
+    title: "Explore lightweight low end PC games for 2GB RAM",
     description: "Find extra-light games for very old laptops."
   },
   {
     href: "/no-gpu-games",
-    title: "No GPU Games",
+    title: "Explore no GPU games for integrated graphics PCs",
     description: "Browse games for integrated graphics and no dedicated GPU."
   }
 ];
@@ -82,7 +82,7 @@ export default function GamesFor4GbRamPage() {
                   {game.title}
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  {game.genre} • {game.minRam} RAM • {game.gpu} • {game.price} •{" "}
+                  {game.genre} - {game.minRam} RAM - {game.gpu} - {game.price} -{" "}
                   {game.mode}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
@@ -103,6 +103,16 @@ export default function GamesFor4GbRamPage() {
             main finder lets you combine RAM, GPU, genre, price, and mode to
             narrow the list faster.
           </p>
+        </ContentSection>
+
+        <ContentSection title="Tips for Playing Games on 4GB RAM">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Start at 720p resolution before lowering every other setting.</li>
+            <li>Turn shadows, anti-aliasing, bloom, and motion blur to low or off.</li>
+            <li>Close browsers, launchers, overlays, and screen recorders first.</li>
+            <li>Choose offline indie games when you want smoother performance.</li>
+            <li>Use the main finder to compare free, paid, online, and offline games.</li>
+          </ul>
         </ContentSection>
 
         <InternalToolLinks

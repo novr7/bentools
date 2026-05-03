@@ -21,17 +21,17 @@ const games = lowEndPcGames
 const relatedLinks = [
   {
     href: "/low-end-pc-game-finder",
-    title: "Low End PC Game Finder",
+    title: "Explore no GPU games in the Low End PC Game Finder",
     description: "Filter games by RAM, GPU, genre, price, and mode."
   },
   {
     href: "/games-for-2gb-ram",
-    title: "Games for 2GB RAM",
+    title: "Explore low end PC games for 2GB RAM",
     description: "Find games for older PCs with very limited memory."
   },
   {
     href: "/games-for-4gb-ram",
-    title: "Games for 4GB RAM",
+    title: "Explore more low end PC games for 4GB RAM",
     description: "Browse games for 4gb ram laptops and weak computers."
   }
 ];
@@ -59,7 +59,7 @@ export default function NoGpuGamesPage() {
         <ContentSection title="Best No GPU Games">
           <p>
             A PC with no dedicated graphics card can still play many low end pc
-            games. In most cases, “no GPU” means your computer uses integrated
+            games. In most cases, no GPU means your computer uses integrated
             graphics built into the processor, such as Intel HD, Intel UHD, or
             similar onboard graphics. These chips share memory with the rest of
             the system, so they perform best with lightweight games, older
@@ -86,7 +86,7 @@ export default function NoGpuGamesPage() {
                   {game.title}
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  {game.genre} • {game.minRam} RAM • {game.gpu} • {game.price} •{" "}
+                  {game.genre} - {game.minRam} RAM - {game.gpu} - {game.price} -{" "}
                   {game.mode}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
@@ -106,6 +106,16 @@ export default function NoGpuGamesPage() {
             launcher overhead. If a game offers windowed mode or a low-spec
             preset, test those settings before giving up.
           </p>
+        </ContentSection>
+
+        <ContentSection title="Tips for Playing Games Without a Dedicated GPU">
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Choose Integrated Graphics in the finder if you do not know your GPU.</li>
+            <li>Start with older PC games, 2D indie games, and turn-based games.</li>
+            <li>Lower texture quality and shadows before changing advanced settings.</li>
+            <li>Keep your laptop plugged in and use a performance power profile.</li>
+            <li>Avoid browser tabs and overlays that share memory with integrated graphics.</li>
+          </ul>
         </ContentSection>
 
         <InternalToolLinks
