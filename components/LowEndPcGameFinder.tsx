@@ -200,6 +200,31 @@ export function LowEndPcGameFinder() {
                 <p className="mt-4 text-sm leading-6 text-slate-600">
                   {game.note}
                 </p>
+                <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">
+                    Quick low-spec guide
+                  </p>
+                  <div className="mt-3 space-y-3 text-sm leading-6 text-slate-600">
+                    <p>
+                      <span className="font-semibold text-slate-950">
+                        Why it fits:
+                      </span>{" "}
+                      {getPerformanceSummary(game)}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-slate-950">
+                        Best settings:
+                      </span>{" "}
+                      {getBestSettings(game)}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-slate-950">
+                        Play this if:
+                      </span>{" "}
+                      {getPlayStyle(game)}
+                    </p>
+                  </div>
+                </div>
               </div>
             </article>
           ))}
@@ -216,6 +241,49 @@ export function LowEndPcGameFinder() {
       )}
     </section>
   );
+}
+
+function getPerformanceSummary(game: LowEndPcGame) {
+  if (game.gpu === "Integrated Graphics") {
+    return `${game.title} is a safer low-end pick because it does not need a dedicated GPU and is a good match for integrated graphics PCs.`;
+  }
+
+  if (game.gpu === "Intel HD") {
+    return `${game.title} is best for old laptops with Intel HD or similar integrated graphics, especially when visual settings are reduced.`;
+  }
+
+  return `${game.title} can still work on weak PCs, but it is a better fit when the computer has a low-end dedicated GPU.`;
+}
+
+function getBestSettings(game: LowEndPcGame) {
+  const resolution =
+    game.minRam === "2GB"
+      ? "Use 720p or lower, close browsers, and keep effects low"
+      : "Start at 720p, lower shadows, and turn off extra effects";
+
+  if (game.genre === "Racing" || game.genre === "Action" || game.genre === "Horror") {
+    return `${resolution} to keep frame rate stable during faster scenes.`;
+  }
+
+  if (game.genre === "Simulation" || game.genre === "Strategy" || game.genre === "Sandbox") {
+    return `${resolution}; large maps, heavy saves, or many objects may need extra CPU and RAM.`;
+  }
+
+  return `${resolution}; this type of game usually stays comfortable on older laptops.`;
+}
+
+function getPlayStyle(game: LowEndPcGame) {
+  const modeText =
+    game.mode === "Offline"
+      ? "you want a low-stress offline game that does not depend on internet quality"
+      : "you want an online game that can still run on weaker hardware";
+
+  const priceText =
+    game.price === "Free"
+      ? " and prefer testing a free game before spending money"
+      : " and want a polished paid game that is still friendly to old PCs";
+
+  return `${modeText}${priceText}.`;
 }
 
 function GameCover({ game }: { game: LowEndPcGame }) {

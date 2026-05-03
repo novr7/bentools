@@ -244,6 +244,30 @@ export default function LowEndPcGameFinderPage() {
           </ol>
         </ContentSection>
 
+        <ContentSection title="How to Read Each Game Recommendation">
+          <p>
+            Each result card is designed to help you decide faster instead of
+            only showing a game title. Start with the cover image and genre to
+            decide whether the game looks like something you want to play, then
+            check the minimum RAM and GPU requirement. A 2GB RAM game with
+            Integrated Graphics is usually the safest match for very old
+            laptops, while a 4GB RAM game with Intel HD can still be realistic
+            if you use low settings. Games marked as Low-end Dedicated GPU are
+            still low-spec picks, but they are better for older gaming laptops
+            or desktops with a basic graphics card.
+          </p>
+          <p>
+            The quick low-spec guide inside each card gives three useful
+            signals: why the game fits weak PCs, which settings to try first,
+            and what kind of player it is best for. This makes the list easier
+            to compare. For example, an offline indie game is usually a safer
+            choice for travel or school laptops, while a free online game is
+            better when you want to test performance without paying first.
+            Reading two or three cards before installing a game can save time,
+            storage space, and frustration.
+          </p>
+        </ContentSection>
+
         <ContentSection title="Tips to Run Games on Low-End PCs">
           <p>
             Lowering resolution, disabling background apps, and using low
