@@ -156,11 +156,11 @@ export function LowEndPcGameFinder() {
             Top Picks
           </p>
           <h3 className="text-xl font-bold text-slate-950">
-            Matching games
+            Your PC can run {matchingGames.length} games smoothly
           </h3>
           <p className="mt-1 text-sm text-slate-600">
-            Showing {matchingGames.length} recommendations from the static MVP
-            dataset.
+            Review the matching games below, then adjust one filter to compare
+            more options for your RAM, GPU, genre, price, or play mode.
           </p>
         </div>
       </div>

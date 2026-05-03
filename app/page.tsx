@@ -4,6 +4,12 @@ import { RelatedTools } from "@/components/RelatedTools";
 
 const tools = [
   {
+    href: "/low-end-pc-game-finder",
+    title: "Low End PC Game Finder",
+    description:
+      "Find low end PC games for 2GB RAM, 4GB RAM, integrated graphics, and weak laptops."
+  },
+  {
     href: "/roblox-username-checker",
     title: "Roblox Username Checker",
     description:

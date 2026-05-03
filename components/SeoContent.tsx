@@ -20,6 +20,11 @@ type InternalToolLinksProps = {
 
 const defaultLinks: ToolLink[] = [
   {
+    href: "/low-end-pc-game-finder",
+    title: "Low End PC Game Finder",
+    description: "Find low end PC games for 2GB RAM, 4GB RAM, and weak PCs."
+  },
+  {
     href: "/roblox-username-checker",
     title: "Roblox Username Checker",
     description: "Check username format and availability."
@@ -47,7 +52,7 @@ export function ContentSection({ title, children }: ContentSectionProps) {
 
 export function InternalToolLinks({
   links = defaultLinks,
-  title = "More Roblox tools",
+  title = "More free tools",
   includeDefaultLinks = true
 }: InternalToolLinksProps) {
   const mergedLinks = includeDefaultLinks

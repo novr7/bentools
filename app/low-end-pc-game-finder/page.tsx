@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { AdPlaceholder } from "@/components/AdPlaceholder";
 import { FAQ } from "@/components/FAQ";
 import { LowEndPcGameFinder } from "@/components/LowEndPcGameFinder";
@@ -254,6 +255,39 @@ export default function LowEndPcGameFinderPage() {
             requirements, lower shadows and effects, reduce resolution, and
             test offline mode when available. Lightweight games often feel much
             better than forcing a modern title to run badly.
+          </p>
+        </ContentSection>
+
+        <ContentSection title="Choose the Right Starting Point">
+          <p>
+            The fastest way to use this site is to begin with the limitation
+            that affects your PC the most. If memory is your biggest problem,
+            start with{" "}
+            <Link className="font-semibold text-blue-700" href="/games-for-2gb-ram">
+              games for 2GB RAM
+            </Link>{" "}
+            or{" "}
+            <Link className="font-semibold text-blue-700" href="/games-for-4gb-ram">
+              games for 4GB RAM
+            </Link>
+            . If your computer has no dedicated graphics card, start with the{" "}
+            <Link className="font-semibold text-blue-700" href="/no-gpu-games">
+              no GPU games
+            </Link>{" "}
+            page and then come back to the finder to filter by genre, price,
+            and mode. This keeps the search focused instead of making you scan
+            every game at once.
+          </p>
+          <p>
+            The hook above is meant to make the tool feel personal: when you
+            change a filter, the count updates so you can see how many games
+            your PC can likely run smoothly. A 2GB RAM laptop may show a
+            smaller but safer list, while a 4GB RAM PC with Intel HD graphics
+            can unlock more action, strategy, sandbox, and indie choices. Try
+            one filter at a time, compare the number of matching games, and
+            open the related guides when you want a narrower list. That simple
+            loop helps you stay on the page longer while finding a game that
+            actually fits your weak PC.
           </p>
         </ContentSection>
 
