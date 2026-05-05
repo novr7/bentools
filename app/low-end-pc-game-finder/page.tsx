@@ -268,6 +268,30 @@ export default function LowEndPcGameFinderPage() {
           </p>
         </ContentSection>
 
+        <ContentSection title="Game Lists That Keep Your Search Moving">
+          <p>
+            If you are not sure what to play, use the finder like a reading
+            list. Start with the Top Picks, then sort by Best performance to
+            find the safest games for weak PCs. After that, switch to Small
+            size when you want games that are more likely to download quickly,
+            fit on limited storage, and run without heavy graphics settings.
+            This gives you a simple loop: check a few cards, compare the quick
+            low-spec guide, change one filter, and scan the list again.
+          </p>
+          <p>
+            For very old laptops, begin with simulation, strategy, RPG, and
+            indie games because they often depend less on fast 3D graphics.
+            For a 4GB RAM PC with Intel HD graphics, try action games,
+            platformers, card games, and older classics after lowering shadows
+            and resolution. If you only want offline play, choose Offline mode
+            and look for games with short sessions or pause-friendly gameplay.
+            If you want free games, use the Free filter first, then sort by
+            Best performance. The goal is not just to find one game; it is to
+            build a shortlist of several low end PC games that match your
+            actual machine.
+          </p>
+        </ContentSection>
+
         <ContentSection title="Tips to Run Games on Low-End PCs">
           <p>
             Lowering resolution, disabling background apps, and using low

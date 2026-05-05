@@ -115,6 +115,25 @@ export default function GamesFor4GbRamPage() {
           </ul>
         </ContentSection>
 
+        <ContentSection title="Best Types of Games for 4GB RAM">
+          <p>
+            A 4GB RAM PC can usually handle a wider range of low end PC games
+            than a 2GB machine, but the best results still come from choosing
+            the right genres. Older shooters, 2D action games, strategy games,
+            deckbuilders, simulation games, and classic RPGs are strong
+            starting points. If your laptop has Intel HD graphics, avoid high
+            texture packs and start with low shadows.
+          </p>
+          <p>
+            Use this page as a quick list, then open the Low End PC Game Finder
+            when you want to sort by Best performance or Small size. That lets
+            you compare free games, offline games, and online games without
+            jumping between store pages. For weak PCs, a shortlist of five
+            realistic games is more useful than one demanding game that barely
+            launches.
+          </p>
+        </ContentSection>
+
         <InternalToolLinks
           includeDefaultLinks={false}
           links={relatedLinks}

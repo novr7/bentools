@@ -30,6 +30,8 @@ type GameFilters = {
   mode: AnyFilter<GameMode>;
 };
 
+type SortMode = "best-performance" | "small-size";
+
 const defaultFilters: GameFilters = {
   ram: "Any",
   gpu: "Any",
@@ -41,11 +43,17 @@ const defaultFilters: GameFilters = {
 export function LowEndPcGameFinder() {
   const [draftFilters, setDraftFilters] = useState<GameFilters>(defaultFilters);
   const [activeFilters, setActiveFilters] = useState<GameFilters>(defaultFilters);
+  const [sortMode, setSortMode] = useState<SortMode>("best-performance");
   const [copiedTitle, setCopiedTitle] = useState("");
 
   const matchingGames = useMemo(() => {
-    return lowEndPcGames.filter((game) => matchesFilters(game, activeFilters));
-  }, [activeFilters]);
+    return lowEndPcGames
+      .filter((game) => matchesFilters(game, activeFilters))
+      .sort((first, second) => sortGames(first, second, sortMode));
+  }, [activeFilters, sortMode]);
+
+  const smoothGames = matchingGames.filter(isSmoothPick);
+  const playableGames = matchingGames.length - smoothGames.length;
 
   async function copyTitle(title: string) {
     await navigator.clipboard.writeText(title);
@@ -69,6 +77,20 @@ export function LowEndPcGameFinder() {
             Filter a static list of {lowEndPcGames.length} lightweight PC games
             with cover images for old laptops, weak GPUs, and low RAM setups.
           </p>
+        </div>
+
+        <div className="mt-5 rounded-lg border border-emerald-300/30 bg-white/10 p-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-300">
+            Top Picks
+          </p>
+          <h3 className="mt-1 text-xl font-bold">Best games for your PC:</h3>
+          <ul className="mt-3 grid gap-2 text-sm font-semibold text-white sm:grid-cols-3">
+            {["Stardew Valley", "Terraria", "Undertale"].map((title) => (
+              <li className="rounded-md bg-white/10 px-3 py-2" key={title}>
+                {title}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
@@ -153,16 +175,43 @@ export function LowEndPcGameFinder() {
       <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-            Top Picks
+            Result Summary
           </p>
           <h3 className="text-xl font-bold text-slate-950">
             Your PC can run {matchingGames.length} games smoothly
           </h3>
-          <p className="mt-1 text-sm text-slate-600">
-            Review the matching games below, then adjust one filter to compare
-            more options for your RAM, GPU, genre, price, or play mode.
-          </p>
+          <div className="mt-3 grid gap-3 text-sm sm:grid-cols-2">
+            <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4">
+              <p className="text-2xl font-bold text-emerald-800">
+                {smoothGames.length}
+              </p>
+              <p className="mt-1 font-semibold text-slate-700">
+                games smoothly
+              </p>
+            </div>
+            <div className="rounded-lg border border-amber-200 bg-amber-50 p-4">
+              <p className="text-2xl font-bold text-amber-800">
+                {playableGames}
+              </p>
+              <p className="mt-1 font-semibold text-slate-700">
+                games playable with low settings
+              </p>
+            </div>
+          </div>
         </div>
+        <label className="block min-w-52">
+          <span className="mb-2 block text-sm font-semibold text-slate-700">
+            Sort results
+          </span>
+          <select
+            className="w-full rounded-md border border-slate-300 bg-white px-3 py-3 text-sm text-slate-950 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200"
+            onChange={(event) => setSortMode(event.target.value as SortMode)}
+            value={sortMode}
+          >
+            <option value="best-performance">Best performance</option>
+            <option value="small-size">Small size</option>
+          </select>
+        </label>
       </div>
 
       {matchingGames.length > 0 ? (
@@ -241,6 +290,33 @@ export function LowEndPcGameFinder() {
       )}
     </section>
   );
+}
+
+function isSmoothPick(game: LowEndPcGame) {
+  return ramScore(game.minRam) <= 4 && game.gpu !== "Low-end Dedicated GPU";
+}
+
+function sortGames(first: LowEndPcGame, second: LowEndPcGame, sortMode: SortMode) {
+  if (sortMode === "small-size") {
+    return sizeScore(first) - sizeScore(second);
+  }
+
+  return (
+    ramScore(first.minRam) - ramScore(second.minRam) ||
+    gpuScore(first.gpu) - gpuScore(second.gpu) ||
+    first.title.localeCompare(second.title)
+  );
+}
+
+function sizeScore(game: LowEndPcGame) {
+  const genreScore =
+    game.genre === "Indie" || game.genre === "Strategy" || game.genre === "RPG"
+      ? 0
+      : game.genre === "Simulation" || game.genre === "Sandbox"
+        ? 1
+        : 2;
+
+  return genreScore + ramScore(game.minRam) + gpuScore(game.gpu);
 }
 
 function getPerformanceSummary(game: LowEndPcGame) {
