@@ -13,7 +13,7 @@ SEO-friendly Next.js web app for Roblox username checks, name ideas, bio tools, 
 - Roblox avatar idea generator with Cute, Dark, Anime, Rich, and Casual styles
 - Roblox font generator and symbols copy page
 - Display name, girls username, boys username, bio ideas, username combiner, group name, and outfit idea tools
-- Ben Game Finder low-end PC game finder with 100+ static low-spec game recommendations
+- Ben Game Finder low-end PC game finder with 300+ static low-spec game recommendations
 - Filters for RAM, GPU, genre, free/paid games, and online/offline mode
 - Game result cards with cover images when available
 - Copy-to-clipboard feedback

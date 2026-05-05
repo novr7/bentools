@@ -1527,5 +1527,2005 @@ export const lowEndPcGames: LowEndPcGame[] = [
     price: "Paid" as GamePrice,
     mode: "Offline" as GameMode,
     note: "Older arcade racer that benefits from a basic dedicated GPU."
+  },
+  {
+    title: "HoloCure - Save the Fans!",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "HoloCure - Save the Fans! is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2420510
+  },
+  {
+    title: "Paper Lily - Chapter 1",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Paper Lily - Chapter 1 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2220360
+  },
+  {
+    title: "Project Kat - Paper Lily Prologue",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Project Kat - Paper Lily Prologue is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1698960
+  },
+  {
+    title: "Öoo",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Öoo is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2721890
+  },
+  {
+    title: "Aventura Copilului Albastru și Urât",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Aventura Copilului Albastru și Urât is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1530140
+  },
+  {
+    title: "Smushi Come Home",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Smushi Come Home is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1740300
+  },
+  {
+    title: "Catgirl",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Catgirl is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3569430
+  },
+  {
+    title: "Super Lesbian Animal RPG",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Super Lesbian Animal RPG is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2124380
+  },
+  {
+    title: "Moonleap",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Moonleap is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2166050
+  },
+  {
+    title: "DFHack - Dwarf Fortress Modding Engine",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "DFHack - Dwarf Fortress Modding Engine is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2346660
+  },
+  {
+    title: "MAHOUTEQ!",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "MAHOUTEQ! is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3793580
+  },
+  {
+    title: "Hidden in Plain Sight",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Hidden in Plain Sight is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 303590
+  },
+  {
+    title: "Strawberry Chocolate",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Strawberry Chocolate is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3579050
+  },
+  {
+    title: "Don't Escape Trilogy",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Don't Escape Trilogy is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1070550
+  },
+  {
+    title: "Vampire Survivors",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Vampire Survivors is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1794680
+  },
+  {
+    title: "DELTARUNE",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "DELTARUNE is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1671210
+  },
+  {
+    title: "Pizza Tower",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Pizza Tower is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2231450
+  },
+  {
+    title: "Katana ZERO",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Katana ZERO is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 460950
+  },
+  {
+    title: "Touhou Mystia's Izakaya",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Touhou Mystia's Izakaya is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1584090
+  },
+  {
+    title: "Rhythm Doctor",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Rhythm Doctor is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 774181
+  },
+  {
+    title: "Sheepy: A Short Adventure",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Sheepy: A Short Adventure is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1568400
+  },
+  {
+    title: "Aseprite",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Aseprite is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 431730
+  },
+  {
+    title: "Grimm's Hollow",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Grimm's Hollow is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1170880
+  },
+  {
+    title: "Shelldiver",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Shelldiver is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3862670
+  },
+  {
+    title: "Look Outside",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Look Outside is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3373660
+  },
+  {
+    title: "Z.A.T.O. // I Love the World and Everything In It",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Z.A.T.O. // I Love the World and Everything In It is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 4122860
+  },
+  {
+    title: "Hylics",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Hylics is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 397740
+  },
+  {
+    title: "Magic Archery",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Magic Archery is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2905170
+  },
+  {
+    title: "Buy a Croquette!",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Buy a Croquette! is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2167960
+  },
+  {
+    title: "Kindergarten 2",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Kindergarten 2 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1067850
+  },
+  {
+    title: "Felvidek",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Felvidek is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2299900
+  },
+  {
+    title: "Purrgatory",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Purrgatory is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1713610
+  },
+  {
+    title: "Ib",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Ib is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1901370
+  },
+  {
+    title: "OneShot: World Machine Edition",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "OneShot: World Machine Edition is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2915460
+  },
+  {
+    title: "Word Game: Episode 0",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Word Game: Episode 0 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1507970
+  },
+  {
+    title: "The Supper",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "The Supper is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1171370
+  },
+  {
+    title: "Picayune Dreams",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Picayune Dreams is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2088840
+  },
+  {
+    title: "Your Turn To Die -Death Game By Majority-",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Your Turn To Die -Death Game By Majority- is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2067780
+  },
+  {
+    title: "Just a To the Moon Series Beach Episode",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Just a To the Moon Series Beach Episode is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2159210
+  },
+  {
+    title: "Loddlenaut",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Loddlenaut is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1644940
+  },
+  {
+    title: "Path of Achra",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Path of Achra is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2128270
+  },
+  {
+    title: "Handshakes",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Handshakes is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2171690
+  },
+  {
+    title: "CATO: Buttered Cat",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "CATO: Buttered Cat is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1999520
+  },
+  {
+    title: "The Powder Toy",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "The Powder Toy is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1148350
+  },
+  {
+    title: "Mirage Feathers",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Mirage Feathers is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2719060
+  },
+  {
+    title: "Don't Escape: 4 Days to Survive",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Don't Escape: 4 Days to Survive is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 611760
+  },
+  {
+    title: "It Steals",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "It Steals is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1349060
+  },
+  {
+    title: "BLACK BOX LSS - The Shining Immortal",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "BLACK BOX LSS - The Shining Immortal is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2434340
+  },
+  {
+    title: "Endless Monday: Dreams and Deadlines",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Endless Monday: Dreams and Deadlines is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2262610
+  },
+  {
+    title: "Angel at Dusk",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Angel at Dusk is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1405500
+  },
+  {
+    title: "The Void Rains Upon Her Heart",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "The Void Rains Upon Her Heart is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 790060
+  },
+  {
+    title: "Pipistrello and the Cursed Yoyo",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Pipistrello and the Cursed Yoyo is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2870350
+  },
+  {
+    title: "像素女友",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "像素女友 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1368860
+  },
+  {
+    title: "花火与幽灵少女 - Hanabi and Ghost girl",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "花火与幽灵少女 - Hanabi and Ghost girl is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2302540
+  },
+  {
+    title: "Ambidextro",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Ambidextro is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3445580
+  },
+  {
+    title: "Fretless - The Wrath of Riffson",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Fretless - The Wrath of Riffson is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2429050
+  },
+  {
+    title: "DOTOKOI / 像素男友",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "DOTOKOI / 像素男友 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1198320
+  },
+  {
+    title: "坦率的小红帽和爱说谎的狼",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "坦率的小红帽和爱说谎的狼 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1216080
+  },
+  {
+    title: "DAVE THE DIVER - DREDGE Content Pack",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "DAVE THE DIVER - DREDGE Content Pack is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2677020
+  },
+  {
+    title: "Long Dream",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Long Dream is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2088030
+  },
+  {
+    title: "Chrono Gear: Warden of Time",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Chrono Gear: Warden of Time is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3081840
+  },
+  {
+    title: "Ticy Adventure Club : Queen of the Spring",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Ticy Adventure Club : Queen of the Spring is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2448980
+  },
+  {
+    title: "DEVIL BLADE REBOOT",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "DEVIL BLADE REBOOT is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2882440
+  },
+  {
+    title: "BLUE REVOLVER",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "BLUE REVOLVER is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 439490
+  },
+  {
+    title: "Towards Future",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Towards Future is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1888010
+  },
+  {
+    title: "Cirno! Lifts a Boulder",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Cirno! Lifts a Boulder is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 4173110
+  },
+  {
+    title: "Cleo - a pirate's tale",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Cleo - a pirate's tale is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1361230
+  },
+  {
+    title: "Star Fetchers : Escape from Pork Belly",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Star Fetchers : Escape from Pork Belly is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2869630
+  },
+  {
+    title: "Annalynn",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Annalynn is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1508460
+  },
+  {
+    title: "Garbanzo Quest",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Garbanzo Quest is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2105910
+  },
+  {
+    title: "Vibrant Venture",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Vibrant Venture is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1264520
+  },
+  {
+    title: "RAM: Random Access Mayhem",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "RAM: Random Access Mayhem is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2256450
+  },
+  {
+    title: "Dangeresque: The Roomisode Triungulate",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Dangeresque: The Roomisode Triungulate is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2442020
+  },
+  {
+    title: "Slash/Jump",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Slash/Jump is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3030210
+  },
+  {
+    title: "Burger Shop 3",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Burger Shop 3 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2505570
+  },
+  {
+    title: "Mimic Logic",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Mimic Logic is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2455920
+  },
+  {
+    title: "tModLoader",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "tModLoader is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1281930
+  },
+  {
+    title: "Balatro",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Balatro is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2379780
+  },
+  {
+    title: "OMORI",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "OMORI is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1150690
+  },
+  {
+    title: "SANABI",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "SANABI is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1562700
+  },
+  {
+    title: "VA-11 Hall-A: Cyberpunk Bartender Action",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "VA-11 Hall-A: Cyberpunk Bartender Action is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 447530
+  },
+  {
+    title: "Fields of Mistria",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Fields of Mistria is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2142790
+  },
+  {
+    title: "There Is No Game: Wrong Dimension",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "There Is No Game: Wrong Dimension is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1240210
+  },
+  {
+    title: "Baba Is You",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Baba Is You is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 736260
+  },
+  {
+    title: "The Expendabros",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "The Expendabros is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 312990
+  },
+  {
+    title: "Outcore: Desktop Adventure",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Outcore: Desktop Adventure is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1275670
+  },
+  {
+    title: "Tales of the Black Forest",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Tales of the Black Forest is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1093910
+  },
+  {
+    title: "Webbed",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Webbed is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1390350
+  },
+  {
+    title: "Touhou Luna Nights",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Touhou Luna Nights is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 851100
+  },
+  {
+    title: "Nodebuster",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Nodebuster is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3107330
+  },
+  {
+    title: "Eternal Senia",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Eternal Senia is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 351640
+  },
+  {
+    title: "Post Void",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Post Void is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1285670
+  },
+  {
+    title: "Gunpoint",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Gunpoint is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 206190
+  },
+  {
+    title: "Winter Memories",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Winter Memories is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2495450
+  },
+  {
+    title: "White Knuckle",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "White Knuckle is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3195790
+  },
+  {
+    title: "The Case of the Golden Idol",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "The Case of the Golden Idol is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1677770
+  },
+  {
+    title: "BAD END THEATER",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "BAD END THEATER is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1764390
+  },
+  {
+    title: "At Home Alone Final",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "At Home Alone Final is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1740100
+  },
+  {
+    title: "Tower Wizard",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Tower Wizard is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3372980
+  },
+  {
+    title: "CULTIC",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "CULTIC is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1684930
+  },
+  {
+    title: "Digseum",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Digseum is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3361470
+  },
+  {
+    title: "Star Fetchers",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Star Fetchers is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1178030
+  },
+  {
+    title: "In Stars And Time",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "In Stars And Time is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1677310
+  },
+  {
+    title: "Bloody Hell",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Bloody Hell is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2056220
+  },
+  {
+    title: "A Space for the Unbound",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "A Space for the Unbound is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1201270
+  },
+  {
+    title: "Dungeon Munchies",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Dungeon Munchies is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 799640
+  },
+  {
+    title: "Disfigure",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Disfigure is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2083160
+  },
+  {
+    title: "Nightmare Kart",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Nightmare Kart is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2930160
+  },
+  {
+    title: "Town to City",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Town to City is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3115220
+  },
+  {
+    title: "Outpath: First Journey",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Outpath: First Journey is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2237980
+  },
+  {
+    title: "Whisper of the House",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Whisper of the House is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2589500
+  },
+  {
+    title: "我的小鲨鱼",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "我的小鲨鱼 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2758540
+  },
+  {
+    title: "The Drifter",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "The Drifter is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1170570
+  },
+  {
+    title: "异化之恶〇Abnormal Treatment",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "异化之恶〇Abnormal Treatment is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1122750
+  },
+  {
+    title: "Day of the Tentacle Remastered",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Day of the Tentacle Remastered is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 388210
+  },
+  {
+    title: "Ticy Adventure Club",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Ticy Adventure Club is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2135690
+  },
+  {
+    title: "D1AL-ogue",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "D1AL-ogue is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 4270390
+  },
+  {
+    title: "Hylics 2",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Hylics 2 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1286710
+  },
+  {
+    title: "Princess Remedy in a World of Hurt",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Princess Remedy in a World of Hurt is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 407900
+  },
+  {
+    title: "Chop Goblins",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Chop Goblins is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1935660
+  },
+  {
+    title: "Mini Cozy Room: Lo-Fi",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Mini Cozy Room: Lo-Fi is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3511030
+  },
+  {
+    title: "Grimshire",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Grimshire is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2238470
+  },
+  {
+    title: "Lily's Well",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Lily's Well is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1834870
+  },
+  {
+    title: "Cornerpond",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Cornerpond is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3454590
+  },
+  {
+    title: "Swallow the Sea",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Swallow the Sea is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1511860
+  },
+  {
+    title: "PockeDate! - Pocket Dating Simulator",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "PockeDate! - Pocket Dating Simulator is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3107350
+  },
+  {
+    title: "Hello Charlotte EP2: Requiem Aeternam Deo",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Hello Charlotte EP2: Requiem Aeternam Deo is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 557630
+  },
+  {
+    title: "COMPOUND",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "COMPOUND is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 615120
+  },
+  {
+    title: "Backyard Baseball '97",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Backyard Baseball '97 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3170540
+  },
+  {
+    title: "Brutal Orchestra",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Brutal Orchestra is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1734320
+  },
+  {
+    title: "Vampire Survivors: Ode to Castlevania",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Vampire Survivors: Ode to Castlevania is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3210350
+  },
+  {
+    title: "Horsey Game",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Horsey Game is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3602570
+  },
+  {
+    title: "Cattails: Wildwood Story",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Cattails: Wildwood Story is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1882500
+  },
+  {
+    title: "Tribal Hunter",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Tribal Hunter is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1379870
+  },
+  {
+    title: "Proverbs",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Proverbs is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3083300
+  },
+  {
+    title: "My succubus Kukula",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "My succubus Kukula is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2848420
+  },
+  {
+    title: "Omelet You Cook",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Omelet You Cook is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3205380
+  },
+  {
+    title: "A Space For The Unbound - Prologue",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "A Space For The Unbound - Prologue is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1201280
+  },
+  {
+    title: "永冻之壳 The Shell of Permafrost",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "永冻之壳 The Shell of Permafrost is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 976940
+  },
+  {
+    title: "Fear the Spotlight",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Fear the Spotlight is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1959390
+  },
+  {
+    title: "沉睡的法则 Things as They Are",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "沉睡的法则 Things as They Are is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 965820
+  },
+  {
+    title: "Wheelchair Wizards",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Wheelchair Wizards is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3832630
+  },
+  {
+    title: "Enjoy the Diner",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Enjoy the Diner is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2336980
+  },
+  {
+    title: "Far Fishing",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Far Fishing is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3723470
+  },
+  {
+    title: "Toree 2",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Toree 2 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1722620
+  },
+  {
+    title: "Kukoro: Stream chat games",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Kukoro: Stream chat games is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1166990
+  },
+  {
+    title: "Mudborne: Frog Management Sim",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Mudborne: Frog Management Sim is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2355150
+  },
+  {
+    title: "Lost Wiki: Kozlovka",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Lost Wiki: Kozlovka is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 4018950
+  },
+  {
+    title: "Beatblock",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Beatblock is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3045200
+  },
+  {
+    title: "Blackwell Epiphany",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Blackwell Epiphany is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 236930
+  },
+  {
+    title: "Momotype",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Momotype is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1822190
+  },
+  {
+    title: "Deep Sleep Trilogy",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Deep Sleep Trilogy is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1146510
+  },
+  {
+    title: "Master of Magic Classic",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Master of Magic Classic is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1146370
+  },
+  {
+    title: "Evil Egg",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Evil Egg is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3651950
+  },
+  {
+    title: "Shogun Showdown: Prologue",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Shogun Showdown: Prologue is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2316330
+  },
+  {
+    title: "Replicube",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Replicube is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3401490
+  },
+  {
+    title: "Zombie Estate 2",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Zombie Estate 2 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 512490
+  },
+  {
+    title: "Electoral Carnage",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Electoral Carnage is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3706810
+  },
+  {
+    title: "Bahamut2-dragon's bride",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Bahamut2-dragon's bride is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1673190
+  },
+  {
+    title: "The Deadseat",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "The Deadseat is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3667230
+  },
+  {
+    title: "FoE Remains",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "FoE Remains is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3908900
+  },
+  {
+    title: "Come out, cat",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Come out, cat is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3930300
+  },
+  {
+    title: "Slider",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Slider is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1916890
+  },
+  {
+    title: "DAVE THE DIVER",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "DAVE THE DIVER is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1868140
+  },
+  {
+    title: "Inscryption",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Inscryption is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1092790
+  },
+  {
+    title: "Cookie Clicker",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Cookie Clicker is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1454400
+  },
+  {
+    title: "Your Only Move Is HUSTLE",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Your Only Move Is HUSTLE is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2212330
+  },
+  {
+    title: "Clone Drone in the Danger Zone",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Clone Drone in the Danger Zone is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 597170
+  },
+  {
+    title: "Rivals of Aether",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Rivals of Aether is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 383980
+  },
+  {
+    title: "Milk inside a bag of milk inside a bag of milk",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Milk inside a bag of milk inside a bag of milk is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1392820
+  },
+  {
+    title: "Milk outside a bag of milk outside a bag of milk",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Milk outside a bag of milk outside a bag of milk is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1604000
+  },
+  {
+    title: "The Test",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "The Test is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1241510
+  },
+  {
+    title: "Streets of Rogue",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Streets of Rogue is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 512900
+  },
+  {
+    title: "Rusty's Retirement",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Rusty's Retirement is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2666510
+  },
+  {
+    title: "Until Then",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Until Then is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1574820
+  },
+  {
+    title: "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3265700
+  },
+  {
+    title: "Tiny Rogues",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Tiny Rogues is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2088570
+  },
+  {
+    title: "Kindergarten",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Kindergarten is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 589590
+  },
+  {
+    title: "Kingdom Rush Frontiers - Tower Defense",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Kingdom Rush Frontiers - Tower Defense is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 458710
+  },
+  {
+    title: "No Case Should Remain Unsolved",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "No Case Should Remain Unsolved is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2676840
+  },
+  {
+    title: "Coloring Pixels",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Coloring Pixels is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 897330
+  },
+  {
+    title: "There Is No Game: Jam Edition 2015",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "There Is No Game: Jam Edition 2015 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1241700
+  },
+  {
+    title: "Devil Daggers",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Devil Daggers is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 422970
+  },
+  {
+    title: "Krita",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Krita is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 280680
+  },
+  {
+    title: "Rusted Warfare - RTS",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Rusted Warfare - RTS is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 647960
+  },
+  {
+    title: "Bit Blaster XL",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Bit Blaster XL is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 433950
+  },
+  {
+    title: "枝江往事",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "枝江往事 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1641270
+  },
+  {
+    title: "Boneraiser Minions",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Boneraiser Minions is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1944570
+  },
+  {
+    title: "PAC-MAN™ Championship Edition DX+",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "PAC-MAN™ Championship Edition DX+ is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 236450
+  },
+  {
+    title: "SUPER CHICKEN JUMPER",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "SUPER CHICKEN JUMPER is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 584640
+  },
+  {
+    title: "DEADBOLT",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "DEADBOLT is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 394970
+  },
+  {
+    title: "Tails Noir: Prologue",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Tails Noir: Prologue is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 992310
+  },
+  {
+    title: "LiEat",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "LiEat is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 373770
+  },
+  {
+    title: "Beyond Citadel",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Beyond Citadel is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 3371240
+  },
+  {
+    title: "Voidigo",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Voidigo is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1304680
+  },
+  {
+    title: "Coloring Game 2",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Free" as GamePrice,
+    mode: "Online" as GameMode,
+    note: "Coloring Game 2 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1216200
+  },
+  {
+    title: "Progressbar95",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Progressbar95 is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 1304550
+  },
+  {
+    title: "Freedom Planet",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Freedom Planet is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 248310
+  },
+  {
+    title: "Ace Attorney Investigations Collection",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Ace Attorney Investigations Collection is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 2401970
+  },
+  {
+    title: "Star of Providence",
+    genre: "Indie" as GameGenre,
+    minRam: "2GB" as GameRam,
+    gpu: "Integrated Graphics" as GameGpu,
+    price: "Paid" as GamePrice,
+    mode: "Offline" as GameMode,
+    note: "Star of Providence is a lightweight indie pick that is worth trying on old laptops and low-end PCs.",
+    steamAppId: 603960
   }
 ];

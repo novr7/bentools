@@ -8,7 +8,7 @@ import { lowEndPcGames } from "@/lib/lowEndPcGames";
 
 export const metadata: Metadata = {
   title:
-    "Low-End PC Game Finder (2026) - 100+ Games That Run Smoothly on 2GB / 4GB RAM",
+    "Low-End PC Game Finder (2026) - 300+ Games That Run Smoothly on 2GB / 4GB RAM",
   description:
     "Find the best low-end PC games for weak computers. Filter by RAM, GPU, and genre to discover games that run smoothly on 2GB or 4GB RAM PCs.",
   alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Low-End PC Game Finder (2026) - 100+ Games That Run Smoothly on 2GB / 4GB RAM",
+      "Low-End PC Game Finder (2026) - 300+ Games That Run Smoothly on 2GB / 4GB RAM",
     description:
       "Find the best low-end PC games for weak computers. Filter by RAM, GPU, and genre to discover games that run smoothly on 2GB or 4GB RAM PCs.",
     url: "https://bentools.site/low-end-pc-game-finder",
