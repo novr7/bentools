@@ -57,6 +57,12 @@ Open `http://localhost:3000`.
 - `/games-for-2gb-ram`
 - `/games-for-4gb-ram`
 - `/no-gpu-games`
+- `/games-under-1gb`
+- `/free-low-end-pc-games`
+- `/multiplayer-low-end-pc-games`
+- `/intel-hd-graphics-games`
+- `/low-end-horror-games`
+- `/best-indie-games-for-low-end-pc`
 - `/roblox-font-generator`
 - `/roblox-symbols-copy-and-paste`
 - `/roblox-display-name-generator`

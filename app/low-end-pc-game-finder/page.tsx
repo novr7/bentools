@@ -8,7 +8,7 @@ import { lowEndPcGames } from "@/lib/lowEndPcGames";
 
 export const metadata: Metadata = {
   title:
-    "Low-End PC Game Finder (2026) - 300+ Games That Run Smoothly on 2GB / 4GB RAM",
+    "Low-End PC Game Finder (2026) - 300+ Games for Weak PCs & 4GB RAM",
   description:
     "Find the best low-end PC games for weak computers. Filter by RAM, GPU, and genre to discover games that run smoothly on 2GB or 4GB RAM PCs.",
   alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Low-End PC Game Finder (2026) - 300+ Games That Run Smoothly on 2GB / 4GB RAM",
+      "Low-End PC Game Finder (2026) - 300+ Games for Weak PCs & 4GB RAM",
     description:
       "Find the best low-end PC games for weak computers. Filter by RAM, GPU, and genre to discover games that run smoothly on 2GB or 4GB RAM PCs.",
     url: "https://bentools.site/low-end-pc-game-finder",
@@ -82,6 +82,21 @@ const internalLinks = [
     href: "/no-gpu-games",
     title: "Explore no GPU games for integrated graphics PCs",
     description: "Discover low spec PC games for integrated graphics and weak GPUs."
+  },
+  {
+    href: "/free-low-end-pc-games",
+    title: "Explore free low-end PC games",
+    description: "Find lightweight free games for weak computers and old laptops."
+  },
+  {
+    href: "/intel-hd-graphics-games",
+    title: "Explore Intel HD graphics games",
+    description: "Browse games for Intel HD laptops and integrated graphics PCs."
+  },
+  {
+    href: "/best-indie-games-for-low-end-pc",
+    title: "Explore the best indie games for low-end PC",
+    description: "Find indie games that are friendly to low RAM and weak GPUs."
   }
 ];
 
@@ -158,13 +173,18 @@ export default function LowEndPcGameFinderPage() {
               Ben Game Finder
             </p>
             <h1 className="mt-3 text-4xl font-bold tracking-normal text-slate-950">
-              Low End PC Game Finder for Low End PC Games
+              Low-End PC Game Finder (2026)
             </h1>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-              Find low end pc games, games for low end pc setups, games for
-              4gb ram PCs, and low spec pc games for old laptops, integrated
-              graphics, and weak computers that struggle with modern releases.
+              Find 300+ games that run smoothly on weak PCs, old laptops,
+              Intel HD graphics, and 2GB / 4GB RAM systems.
             </p>
+          </div>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <HeroStat label="300+ Games" value={`${lowEndPcGames.length} low-spec picks`} />
+            <HeroStat label="20+ Genres" value="Action, RPG, indie, strategy" />
+            <HeroStat label="Works for Intel HD PCs" value="Integrated graphics friendly" />
+            <HeroStat label="Free + Paid Games" value="Filter by budget instantly" />
           </div>
           <div className="mt-8">
             <LowEndPcGameFinder />
@@ -192,6 +212,37 @@ export default function LowEndPcGameFinderPage() {
             on practical recommendations for older laptops, weak desktops, and
             low spec pc games that are more likely to run smoothly after
             lowering graphics settings.
+          </p>
+        </ContentSection>
+
+        <ContentSection title="Best Games for 2GB RAM PCs">
+          <p>
+            The best games for 2GB RAM PCs are usually older, smaller, and less
+            dependent on modern 3D effects. Stardew Valley, Terraria,
+            Undertale, FTL, Hotline Miami, and many classic indie games are
+            strong starting points because they use lightweight art styles and
+            simple scenes. If your laptop has only 2GB RAM, keep your browser
+            closed, avoid mods, and choose offline mode when possible.
+          </p>
+        </ContentSection>
+
+        <ContentSection title="Best Games for 4GB RAM PCs">
+          <p>
+            A 4GB RAM PC can handle a wider range of low end PC games,
+            especially if it has Intel HD or a basic dedicated GPU. Look for
+            2D action games, deckbuilders, older shooters, strategy games, and
+            polished indie titles. Use the 4GB RAM filter first, then sort by
+            Best performance to find safer games before trying heavier picks.
+          </p>
+        </ContentSection>
+
+        <ContentSection title="Best Games Without a Dedicated GPU">
+          <p>
+            Many PCs without a dedicated GPU can still run games through
+            integrated graphics. Choose Integrated Graphics or Intel HD in the
+            finder, then focus on pixel art, turn-based, card, RPG, and
+            lightweight simulation games. These genres usually need less GPU
+            power and are more forgiving on shared memory systems.
           </p>
         </ContentSection>
 
@@ -309,6 +360,32 @@ export default function LowEndPcGameFinderPage() {
           </ul>
         </ContentSection>
 
+        <ContentSection title="How to Improve Gaming Performance on Weak PCs">
+          <p>
+            Start with the simple fixes first: lower resolution, turn off
+            shadows, disable anti-aliasing, and close background apps. If a
+            game has a fullscreen mode, test it against borderless windowed
+            mode because old laptops can behave differently. Keep the laptop
+            plugged in, use a performance power plan, and avoid recording tools
+            or overlays while playing. For online games, a stable connection
+            matters too; low FPS and network lag together can make a game feel
+            worse than it really is.
+          </p>
+        </ContentSection>
+
+        <ContentSection title="Why Low-End PC Gaming Is Growing Again">
+          <p>
+            Low-end PC gaming is growing because many players use old laptops,
+            school computers, office desktops, handheld PCs, and budget builds.
+            At the same time, indie developers keep releasing creative games
+            that do not need expensive hardware. Players also want games that
+            download quickly, run on limited storage, and work without constant
+            upgrades. A strong low-end game list helps those players find
+            realistic options faster instead of chasing games their hardware
+            cannot handle.
+          </p>
+        </ContentSection>
+
         <ContentSection title="Low End PC Games and Games for 4GB RAM">
           <p>
             The database includes more than one hundred low end pc games across
@@ -376,5 +453,14 @@ export default function LowEndPcGameFinderPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+function HeroStat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+      <p className="text-sm font-bold text-slate-950">{label}</p>
+      <p className="mt-1 text-sm leading-6 text-slate-600">{value}</p>
+    </div>
   );
 }

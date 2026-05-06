@@ -102,8 +102,22 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="border-t border-slate-200 bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-600">
-            This tool is not affiliated with Roblox.
+          <div className="mx-auto grid max-w-6xl gap-4 px-4 py-8 text-sm text-slate-600 md:grid-cols-[1fr_2fr]">
+            <p>This tool is not affiliated with Roblox.</p>
+            <div className="flex flex-wrap gap-3 md:justify-end">
+              <Link className="font-medium text-slate-700 hover:text-blue-700" href="/low-end-pc-game-finder">
+                best low end pc games
+              </Link>
+              <Link className="font-medium text-slate-700 hover:text-blue-700" href="/games-for-4gb-ram">
+                games for 4GB RAM
+              </Link>
+              <Link className="font-medium text-slate-700 hover:text-blue-700" href="/no-gpu-games">
+                games without GPU
+              </Link>
+              <Link className="font-medium text-slate-700 hover:text-blue-700" href="/games-under-1gb">
+                lightweight PC games
+              </Link>
+            </div>
           </div>
         </footer>
       </body>
