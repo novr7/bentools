@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import {
   genreOptions,
@@ -57,6 +56,8 @@ const defaultFilters: GameFilters = {
   mode: "Any"
 };
 
+const pageSize = 60;
+
 export function LowEndPcGameFinder() {
   const [draftFilters, setDraftFilters] = useState<GameFilters>(defaultFilters);
   const [activeFilters, setActiveFilters] = useState<GameFilters>(defaultFilters);
@@ -64,6 +65,7 @@ export function LowEndPcGameFinder() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isFiltering, setIsFiltering] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(pageSize);
   const [copiedTitle, setCopiedTitle] = useState("");
 
   const matchingGames = useMemo(() => {
@@ -78,6 +80,7 @@ export function LowEndPcGameFinder() {
   const smoothGames = matchingGames.filter(isSmoothPick);
   const playableGames = matchingGames.length - smoothGames.length;
   const featuredGames = getFeaturedGames();
+  const visibleGames = matchingGames.slice(0, visibleCount);
 
   useEffect(() => {
     const sentDepths = new Set<number>();
@@ -111,6 +114,7 @@ export function LowEndPcGameFinder() {
   function applyFilters(nextFilters = draftFilters) {
     setIsFiltering(true);
     setActiveFilters(nextFilters);
+    setVisibleCount(pageSize);
     trackEvent("game_finder_filter_click", {
       ram: nextFilters.ram,
       gpu: nextFilters.gpu,
@@ -255,6 +259,7 @@ export function LowEndPcGameFinder() {
             onClick={() => {
               setDraftFilters(defaultFilters);
               setSearchQuery("");
+              setVisibleCount(pageSize);
               applyFilters(defaultFilters);
             }}
             type="button"
@@ -273,6 +278,7 @@ export function LowEndPcGameFinder() {
             className="w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-sm text-slate-950 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200"
             onChange={(event) => {
               setSearchQuery(event.target.value);
+              setVisibleCount(pageSize);
               trackEvent("game_finder_search_usage", {
                 length: event.target.value.length
               });
@@ -349,77 +355,95 @@ export function LowEndPcGameFinder() {
           ))}
         </div>
       ) : matchingGames.length > 0 ? (
-        <div className="mt-5 grid gap-4 md:grid-cols-2">
-          {matchingGames.map((game) => (
-            <article
-              className="overflow-hidden rounded-lg border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-soft"
-              key={`${game.title}-${game.genre}`}
-              onClick={() =>
-                trackEvent("game_card_click", {
-                  game_title: game.title,
-                  action: "open_card"
-                })
-              }
-            >
-              <GameCover game={game} />
-              <div className="p-4">
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-                      {game.genre}
-                    </p>
-                    <h3 className="mt-1 text-lg font-bold text-slate-950">
-                      {game.title}
-                    </h3>
-                    <PerformanceLabel game={game} />
+        <>
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            {visibleGames.map((game) => (
+              <article
+                className="overflow-hidden rounded-lg border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-soft"
+                key={`${game.title}-${game.genre}`}
+                onClick={() =>
+                  trackEvent("game_card_click", {
+                    game_title: game.title,
+                    action: "open_card"
+                  })
+                }
+              >
+                <GameCover game={game} />
+                <div className="p-4">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                        {game.genre}
+                      </p>
+                      <h3 className="mt-1 text-lg font-bold text-slate-950">
+                        {game.title}
+                      </h3>
+                      <PerformanceLabel game={game} />
+                    </div>
+                    <button
+                      className="shrink-0 rounded-md border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-700 transition hover:border-emerald-400 hover:text-emerald-700"
+                      onClick={() => copyTitle(game.title)}
+                      type="button"
+                    >
+                      {copiedTitle === game.title ? "Copied" : "Copy"}
+                    </button>
                   </div>
-                  <button
-                    className="shrink-0 rounded-md border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-700 transition hover:border-emerald-400 hover:text-emerald-700"
-                    onClick={() => copyTitle(game.title)}
-                    type="button"
-                  >
-                    {copiedTitle === game.title ? "Copied" : "Copy"}
-                  </button>
-                </div>
-                <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
-                  <GameSpec label="Minimum RAM" value={game.minRam} />
-                  <GameSpec label="GPU" value={game.gpu} />
-                  <GameSpec label="Price" value={game.price} />
-                  <GameSpec label="Mode" value={game.mode} />
-                </dl>
-                <p className="mt-4 text-sm leading-6 text-slate-600">
-                  {game.note}
-                </p>
-                <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4">
-                  <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">
-                    Quick low-spec guide
+                  <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
+                    <GameSpec label="Minimum RAM" value={game.minRam} />
+                    <GameSpec label="GPU" value={game.gpu} />
+                    <GameSpec label="Price" value={game.price} />
+                    <GameSpec label="Mode" value={game.mode} />
+                  </dl>
+                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                    {game.note}
                   </p>
-                  <div className="mt-3 space-y-3 text-sm leading-6 text-slate-600">
-                    <p>
-                      <span className="font-semibold text-slate-950">
-                        Why it fits:
-                      </span>{" "}
-                      {getPerformanceSummary(game)}
+                  <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4">
+                    <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">
+                      Quick low-spec guide
                     </p>
-                    <p>
-                      <span className="font-semibold text-slate-950">
-                        Best settings:
-                      </span>{" "}
-                      {getBestSettings(game)}
-                    </p>
-                    <p>
-                      <span className="font-semibold text-slate-950">
-                        Play this if:
-                      </span>{" "}
-                      {getPlayStyle(game)}
-                    </p>
+                    <div className="mt-3 space-y-3 text-sm leading-6 text-slate-600">
+                      <p>
+                        <span className="font-semibold text-slate-950">
+                          Why it fits:
+                        </span>{" "}
+                        {getPerformanceSummary(game)}
+                      </p>
+                      <p>
+                        <span className="font-semibold text-slate-950">
+                          Best settings:
+                        </span>{" "}
+                        {getBestSettings(game)}
+                      </p>
+                      <p>
+                        <span className="font-semibold text-slate-950">
+                          Play this if:
+                        </span>{" "}
+                        {getPlayStyle(game)}
+                      </p>
+                    </div>
                   </div>
+                  <SimilarGames game={game} />
                 </div>
-                <SimilarGames game={game} />
-              </div>
-            </article>
-          ))}
-        </div>
+              </article>
+            ))}
+          </div>
+          {visibleCount < matchingGames.length ? (
+            <div className="mt-6 text-center">
+              <button
+                className="rounded-md bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-emerald-700"
+                onClick={() => {
+                  setVisibleCount((current) => current + pageSize);
+                  trackEvent("game_finder_load_more", {
+                    shown: Math.min(visibleCount + pageSize, matchingGames.length)
+                  });
+                }}
+                type="button"
+              >
+                Load more games ({matchingGames.length - visibleCount} left)
+              </button>
+            </div>
+          ) : null}
+        </>
       ) : (
         <div className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-5 text-slate-800">
           <h3 className="text-lg font-bold">No results found</h3>
@@ -636,11 +660,11 @@ function GameCover({ game }: { game: LowEndPcGame }) {
         </span>
       </div>
       {coverUrl ? (
-        <Image
+        <img
           alt={`${game.title} cover image`}
-          className="object-cover"
-          fill
-          sizes="(min-width: 768px) 50vw, 100vw"
+          className="absolute inset-0 h-full w-full object-cover"
+          decoding="async"
+          loading="lazy"
           onError={(event) => {
             event.currentTarget.style.display = "none";
           }}
