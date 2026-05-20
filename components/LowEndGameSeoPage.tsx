@@ -1,6 +1,6 @@
 import { FAQ } from "@/components/FAQ";
 import { ContentSection, InternalToolLinks } from "@/components/SeoContent";
-import type { LowEndPcGame } from "@/lib/lowEndPcGames";
+import type { LowEndPcGame } from "@/lib/lowEndPcGameShared";
 
 type LowEndGameSeoPageProps = {
   eyebrow: string;

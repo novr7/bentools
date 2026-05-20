@@ -14,6 +14,7 @@ SEO-friendly Next.js web app for Roblox username checks, name ideas, bio tools, 
 - Roblox font generator and symbols copy page
 - Display name, girls username, boys username, bio ideas, username combiner, group name, and outfit idea tools
 - Ben Game Finder low-end PC game finder with 300+ static low-spec game recommendations
+- External low-end game data support via static JSON for lightweight hosting
 - Filters for RAM, GPU, genre, free/paid games, and online/offline mode
 - Game result cards with cover images when available
 - Copy-to-clipboard feedback
@@ -78,6 +79,26 @@ Open `http://localhost:3000`.
 ```bash
 npm run build
 ```
+
+## Low-End Game Data Hosting
+
+The game finder loads its interactive database from static JSON instead of bundling the full 300+ game list into the client JavaScript. By default it uses:
+
+`/data/low-end-pc-games.json`
+
+To host the game database on another domain such as `ecoqrth.com`, upload the JSON file there and set this environment variable in Vercel:
+
+```bash
+NEXT_PUBLIC_LOW_END_GAME_DATA_URL=https://ecoqrth.com/data/low-end-pc-games.json
+```
+
+If you also host cover images on that domain, store them as `{steamAppId}.jpg` and set:
+
+```bash
+NEXT_PUBLIC_LOW_END_GAME_COVER_BASE_URL=https://ecoqrth.com/game-covers
+```
+
+This keeps the Next.js app static and reduces Vercel memory pressure because the browser fetches game data and lazy-loaded covers from static hosting.
 
 ## Deploy to Vercel
 

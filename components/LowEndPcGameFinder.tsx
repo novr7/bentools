@@ -6,7 +6,6 @@ import {
   getGameCoverUrl,
   gpuOptions,
   gpuScore,
-  lowEndPcGames,
   modeOptions,
   priceOptions,
   ramOptions,
@@ -17,7 +16,7 @@ import {
   type GamePrice,
   type GameRam,
   type LowEndPcGame
-} from "@/lib/lowEndPcGames";
+} from "@/lib/lowEndPcGameShared";
 
 declare global {
   interface Window {
@@ -57,8 +56,12 @@ const defaultFilters: GameFilters = {
 };
 
 const pageSize = 60;
+const defaultGameDataUrl = "/data/low-end-pc-games.json";
 
 export function LowEndPcGameFinder() {
+  const [games, setGames] = useState<LowEndPcGame[]>([]);
+  const [isLoadingGames, setIsLoadingGames] = useState(true);
+  const [gameDataError, setGameDataError] = useState("");
   const [draftFilters, setDraftFilters] = useState<GameFilters>(defaultFilters);
   const [activeFilters, setActiveFilters] = useState<GameFilters>(defaultFilters);
   const [sortMode, setSortMode] = useState<SortMode>("best-performance");
@@ -68,18 +71,56 @@ export function LowEndPcGameFinder() {
   const [visibleCount, setVisibleCount] = useState(pageSize);
   const [copiedTitle, setCopiedTitle] = useState("");
 
+  useEffect(() => {
+    const controller = new AbortController();
+    const dataUrl =
+      process.env.NEXT_PUBLIC_LOW_END_GAME_DATA_URL || defaultGameDataUrl;
+
+    async function loadGames() {
+      try {
+        setIsLoadingGames(true);
+        const response = await fetch(dataUrl, {
+          cache: "force-cache",
+          signal: controller.signal
+        });
+
+        if (!response.ok) {
+          throw new Error(`Game data failed with ${response.status}`);
+        }
+
+        const data = (await response.json()) as LowEndPcGame[];
+        setGames(data);
+        setGameDataError("");
+      } catch (error) {
+        if (!controller.signal.aborted) {
+          setGameDataError("Game database could not load. Please try again.");
+          setGames([]);
+          console.error(error);
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setIsLoadingGames(false);
+        }
+      }
+    }
+
+    loadGames();
+
+    return () => controller.abort();
+  }, []);
+
   const matchingGames = useMemo(() => {
-    return lowEndPcGames
+    return games
       .filter((game) => matchesFilters(game, activeFilters))
       .filter((game) =>
         game.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
       )
       .sort((first, second) => sortGames(first, second, sortMode));
-  }, [activeFilters, searchQuery, sortMode]);
+  }, [activeFilters, games, searchQuery, sortMode]);
 
   const smoothGames = matchingGames.filter(isSmoothPick);
   const playableGames = matchingGames.length - smoothGames.length;
-  const featuredGames = getFeaturedGames();
+  const featuredGames = getFeaturedGames(games);
   const visibleGames = matchingGames.slice(0, visibleCount);
 
   useEffect(() => {
@@ -160,7 +201,7 @@ export function LowEndPcGameFinder() {
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-6 text-slate-300">
-            Filter a static list of {lowEndPcGames.length} lightweight PC games
+            Filter a static list of {games.length || "300+"} lightweight PC games
             with cover images for old laptops, weak GPUs, and low RAM setups.
           </p>
         </div>
@@ -297,9 +338,16 @@ export function LowEndPcGameFinder() {
           Best Low-End PC Games Right Now
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {featuredGames.map((game) => (
-            <FeaturedGameCard game={game} key={game.title} />
-          ))}
+          {isLoadingGames
+            ? Array.from({ length: 8 }).map((_, index) => (
+                <div
+                  className="h-72 animate-pulse rounded-lg border border-slate-200 bg-slate-100"
+                  key={index}
+                />
+              ))
+            : featuredGames.map((game) => (
+                <FeaturedGameCard game={game} key={game.title} />
+              ))}
         </div>
       </section>
 
@@ -345,7 +393,12 @@ export function LowEndPcGameFinder() {
         </label>
       </div>
 
-      {isFiltering ? (
+      {gameDataError ? (
+        <div className="mt-5 rounded-lg border border-rose-200 bg-rose-50 p-5 text-slate-800">
+          <h3 className="text-lg font-bold">Game database is unavailable</h3>
+          <p className="mt-2 leading-7">{gameDataError}</p>
+        </div>
+      ) : isLoadingGames || isFiltering ? (
         <div className="mt-5 grid gap-4 md:grid-cols-2">
           {Array.from({ length: 4 }).map((_, index) => (
             <div
@@ -422,7 +475,7 @@ export function LowEndPcGameFinder() {
                       </p>
                     </div>
                   </div>
-                  <SimilarGames game={game} />
+                  <SimilarGames game={game} games={games} />
                 </div>
               </article>
             ))}
@@ -517,8 +570,14 @@ function PerformanceLabel({ game }: { game: LowEndPcGame }) {
   );
 }
 
-function SimilarGames({ game }: { game: LowEndPcGame }) {
-  const similarGames = lowEndPcGames
+function SimilarGames({
+  game,
+  games
+}: {
+  game: LowEndPcGame;
+  games: LowEndPcGame[];
+}) {
+  const similarGames = games
     .filter((item) => item.genre === game.genre && item.title !== game.title)
     .slice(0, 3);
 
@@ -545,7 +604,7 @@ function SimilarGames({ game }: { game: LowEndPcGame }) {
   );
 }
 
-function getFeaturedGames() {
+function getFeaturedGames(games: LowEndPcGame[]) {
   const titles = [
     "Stardew Valley",
     "Terraria",
@@ -558,7 +617,7 @@ function getFeaturedGames() {
   ];
 
   return titles
-    .map((title) => lowEndPcGames.find((game) => game.title === title))
+    .map((title) => games.find((game) => game.title === title))
     .filter((game): game is LowEndPcGame => Boolean(game));
 }
 
